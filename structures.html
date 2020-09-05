@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Structures.Html - Tiberian Dawn Editor Reference</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">C&amp;C Tiberian Dawn Editor Reference</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="terms.html">Terminology</a></li>
+                <li><a href="map-settings.html">Map Settings</a></li>
+                <li><a href="team-types.html">Team Types</a></li>
+                <li><a href="triggers.html">Triggers</a></li>
+                <li><a href="object-settings.html">Object Settings</a></li>
+                <li><a href="waypoints.html">Waypoints</a></li>
+                <li><a href="build-levels.html">Build Levels</a></li>
+                <li><a href="tech-trees.html">Tech Trees</a></li>
+                <li><a href="structures.html">Structure Types</a></li>
+                <li><a href="units.html">Unit Types</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Structure Types</h2>
+<p>an immobile <a href="terms.html#techno">techno</a> <a href="terms.html#object">object</a>, some of which produce <a href="terms.html#unit">units</a> or yield other benefits. A collection of <a href="terms.html#structure">structures</a> make up a <a href="terms.html#base">base</a>. There can be no more than 500 structures in the game at once. See &quot;<a href="structures.html">Structure Types</a>&quot;</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <abbr title="Index">Idx</abbr>
+            </th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>
+                <a href="terms.html#strength">
+                    <abbr title="Strength">Str</abbr>
+                </a>
+            </th>
+            <th>
+                <abbr title="Sight Range">Sgt</abbr>
+            </th>
+            <th>Cost</th>
+            <th>
+                <a href="terms.html#weapon">
+                    <abbr title="Weapons">Weaps</abbr>
+                </a>
+            </th>
+            <th>
+                <a href="terms.html#armor">
+                    <abbr title="Armor Type">Amr</abbr>
+                </a>
+            </th>
+            <th>
+                <a href="terms.html#power">
+                    <abbr title="Power Drain">Pwr</abbr>
+                </a>
+            </th>
+            <th>
+                <a href="terms.html#build-level">
+                    <abbr title="Build Level">Lev</abbr>
+                </a>
+            </th>
+            <th>
+                <a href="tech-trees.html">
+                    <abbr title="Prerequisite">Prereq</abbr>
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr id="(none)" class="multirow">
+                <td>-1</td>
+                <td><code>(none)</code></td>
+                <td>no structure</td>
+                <td>0</td>
+                <td>0</td>
+                <td></td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-none">
+                            <abbr title="None">No</abbr>
+                        </a>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    
+                    
+                </td>
+            </tr>
+        
+            <tr id="weap" class="multirow">
+                <td>0</td>
+                <td><code>weap</code></td>
+                <td>Weapons Factory</td>
+                <td>200</td>
+                <td>3</td>
+                <td>2000</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-aluminum">
+                            <abbr title="Aluminum">Al</abbr>
+                        </a>
+                    
+                </td>
+                <td>30</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            5
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#proc">
+                            Tiberium refinery
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Produces vehicles. Production rate lowers to 67% if the <a href="terms.html#base">base</a> is less than 100% powered, to 40% if less than 50% powered, or to 25% if the <a href="terms.html#power">power</a> hits 0%.
+                    
+                </td>
+            </tr>
+        
+            <tr id="gtwr" class="multirow">
+                <td>1</td>
+                <td><code>gtwr</code></td>
+                <td>Guard tower</td>
+                <td>200</td>
+                <td>3</td>
+                <td>500</td>
+                <td>
+                    
+                        
+                        <a href="units.html#weapon-chain-gun">
+                            Chain Gun
+                        </a>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>10</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            7
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#pyle">
+                            Infantry barracks
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#hand">
+                            Hand of Nod
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    machine gun defense
+                    
+                </td>
+            </tr>
+        
+            <tr id="atwr" class="multirow">
+                <td>2</td>
+                <td><code>atwr</code></td>
+                <td>Advanced Guard Tower</td>
+                <td>300</td>
+                <td>4</td>
+                <td>1000</td>
+                <td>
+                    
+                        
+                        <a href="units.html#weapon-tow-two">
+                            Twin TOW Missile Launchers
+                        </a>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-aluminum">
+                            <abbr title="Aluminum">Al</abbr>
+                        </a>
+                    
+                </td>
+                <td>20</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            13
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        4
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#hq">
+                            Communications center
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Missile defense tower. Detects stealth <a href="terms.html#unit">units</a>. Cannot operate under <a href="terms.html#power">power</a> shortage.
+                    
+                </td>
+            </tr>
+        
+            <tr id="obli" class="multirow">
+                <td>3</td>
+                <td><code>obli</code></td>
+                <td>Obelisk of Light</td>
+                <td>200</td>
+                <td>5</td>
+                <td>1500</td>
+                <td>
+                    
+                        
+                        <a href="units.html#weapon-obelisk-laser">
+                            Obelisk Laser
+                        </a>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-aluminum">
+                            <abbr title="Aluminum">Al</abbr>
+                        </a>
+                    
+                </td>
+                <td>150</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            11<strong>*</strong>
+                                            
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        4
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#hq">
+                            Communications center
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Laser defense tower. Takes four seconds to charge once a target is identified. Cannot operate under <a href="terms.html#power">power</a> shortage.
+                    
+                        <br/><strong>*</strong> GDI can never build this in <a href="terms.html#singleplayer">singleplayer</a>, even if Nod <a href="structures.html#fact">construction yard</a> is captured
+                    
+                </td>
+            </tr>
+        
+            <tr id="hq" class="multirow">
+                <td>4</td>
+                <td><code>hq</code></td>
+                <td>Communications center</td>
+                <td>500</td>
+                <td>10</td>
+                <td>1000</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>40</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            3
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            3
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#proc">
+                            Tiberium refinery
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Provides <a href="terms.html#minimap">minimap</a> while not under <a href="terms.html#power">power</a> shortage.
+                    
+                </td>
+            </tr>
+        
+            <tr id="gun" class="multirow">
+                <td>5</td>
+                <td><code>gun</code></td>
+                <td>Turret</td>
+                <td>200</td>
+                <td>5</td>
+                <td>600</td>
+                <td>
+                    
+                        
+                        <a href="units.html#weapon-turret-gun">
+                            Turret Gun
+                        </a>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-steel">
+                            <abbr title="Steel">St</abbr>
+                        </a>
+                    
+                </td>
+                <td>20</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            8
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#pyle">
+                            Infantry barracks
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#hand">
+                            Hand of Nod
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Fixed gun defense
+                    
+                </td>
+            </tr>
+        
+            <tr id="fact" class="multirow">
+                <td>6</td>
+                <td><code>fact</code></td>
+                <td>Construction Yard</td>
+                <td>400</td>
+                <td>3</td>
+                <td></td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>15</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Produces <a href="terms.html#structure">structures</a>. Production rate lowers to 67% if the <a href="terms.html#base">base</a> is less than 100% powered, to 40% if less than 50% powered, or to 25% if the <a href="terms.html#power">power</a> hits 0%. Provides 30 power. The power output decreases linearly to zero as the structure&#x27;s <a href="terms.html#strength">strength</a> decreases.
+                    
+                </td>
+            </tr>
+        
+            <tr id="proc" class="multirow">
+                <td>7</td>
+                <td><code>proc</code></td>
+                <td>Tiberium refinery</td>
+                <td>450</td>
+                <td>4</td>
+                <td>2000</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>40</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            2
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            2
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        1
+                                    
+                                </td>
+                                <td>
+                                    
+                                        1
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#nuke">
+                            Power plant
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#nuk2">
+                            Advanced Power Plant
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Provides <a href="terms.html#credits">credits</a> by processing tiberium dropped off by a <a href="units.html#harv">harvester</a>. Can store 1000 credits. Comes with a free harvester.
+                    
+                </td>
+            </tr>
+        
+            <tr id="silo" class="multirow">
+                <td>8</td>
+                <td><code>silo</code></td>
+                <td>Tiberium silo</td>
+                <td>150</td>
+                <td>2</td>
+                <td>150</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>10</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            2
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            2
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        1
+                                    
+                                </td>
+                                <td>
+                                    
+                                        1
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#proc">
+                            Tiberium refinery
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Can store 1500 <a href="terms.html#credits">credits</a>.
+                    
+                </td>
+            </tr>
+        
+            <tr id="hpad" class="multirow">
+                <td>9</td>
+                <td><code>hpad</code></td>
+                <td>Orca/Apache Helipad</td>
+                <td>400</td>
+                <td>3</td>
+                <td>1500</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>10</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            10
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        6
+                                    
+                                </td>
+                                <td>
+                                    
+                                        6
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#pyle">
+                            Infantry barracks
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#hand">
+                            Hand of Nod
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Rearms helicopters. Comes with a free <a href="units.html#orca">Orca</a> for GDI or <a href="units.html#heli">Apache</a> for Nod.
+                    
+                </td>
+            </tr>
+        
+            <tr id="sam" class="multirow">
+                <td>10</td>
+                <td><code>sam</code></td>
+                <td>SAM site</td>
+                <td>200</td>
+                <td>3</td>
+                <td>750</td>
+                <td>
+                    
+                        
+                        <a href="units.html#weapon-nike">
+                            Nike SAM Launcher
+                        </a>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-steel">
+                            <abbr title="Steel">St</abbr>
+                        </a>
+                    
+                </td>
+                <td>20</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            5
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        6
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#pyle">
+                            Infantry barracks
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#hand">
+                            Hand of Nod
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Anti-air defense
+                    
+                </td>
+            </tr>
+        
+            <tr id="afld" class="multirow">
+                <td>11</td>
+                <td><code>afld</code></td>
+                <td>Delivery Airstrip</td>
+                <td>500</td>
+                <td>5</td>
+                <td>2000</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-steel">
+                            <abbr title="Steel">St</abbr>
+                        </a>
+                    
+                </td>
+                <td>30</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            5
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#proc">
+                            Tiberium refinery
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Produces vehicles by having them delivered by <a href="units.html#c17">cargo plane</a>. Production rate lowers to 67% if the <a href="terms.html#base">base</a> is less than 100% powered, to 40% if less than 50% powered, or to 25% if the <a href="terms.html#power">power</a> hits 0%. <a href="terms.html#unit">Units</a> produced by an <a href="structures.html#afld">airfield</a> have their production time reduced by 25%, to compensate for the delivery time.
+                    
+                </td>
+            </tr>
+        
+            <tr id="nuke" class="multirow">
+                <td>12</td>
+                <td><code>nuke</code></td>
+                <td>Power plant</td>
+                <td>200</td>
+                <td>2</td>
+                <td>300</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            1
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            1
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        0
+                                    
+                                </td>
+                                <td>
+                                    
+                                        0
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Provides 100 <a href="terms.html#power">power</a> at full <a href="terms.html#strength">strength</a>. The power output decreases linearly down to zero as the <a href="terms.html#structure">structure</a>&#x27;s strength decreases. This isnt the <a href="structures.html#tmpl">Temple of Nod</a>, that&#x27;s &quot;tmpl&quot;.
+                    
+                </td>
+            </tr>
+        
+            <tr id="nuk2" class="multirow">
+                <td>13</td>
+                <td><code>nuk2</code></td>
+                <td>Advanced Power Plant</td>
+                <td>300</td>
+                <td>2</td>
+                <td>700</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            13
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            12
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        5
+                                    
+                                </td>
+                                <td>
+                                    
+                                        5
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#nuke">
+                            Power plant
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Provides 200 <a href="terms.html#power">power</a> at full <a href="terms.html#strength">strength</a>. The power output decreases linearly to zero as the <a href="terms.html#structure">structure</a>&#x27;s strength decreases. This isn&#x27;t the <a href="structures.html#tmpl">Temple of Nod</a>, that&#x27;s &quot;tmpl&quot;.
+                    
+                </td>
+            </tr>
+        
+            <tr id="hosp" class="multirow">
+                <td>14</td>
+                <td><code>hosp</code></td>
+                <td>Civilian hospital</td>
+                <td>200</td>
+                <td>2</td>
+                <td>500</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>20</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            99
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            99
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        99
+                                    
+                                </td>
+                                <td>
+                                    
+                                        99
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#pyle">
+                            Infantry barracks
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#hand">
+                            Hand of Nod
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Setpiece. Doesn&#x27;t do anything even though it can technically be built. Can store 100 <a href="terms.html#credits">credits</a>
+                    
+                </td>
+            </tr>
+        
+            <tr id="pyle" class="multirow">
+                <td>15</td>
+                <td><code>pyle</code></td>
+                <td>Infantry barracks</td>
+                <td>400</td>
+                <td>3</td>
+                <td>300</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>20</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            1
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        0
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#nuke">
+                            Power plant
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#nuk2">
+                            Advanced Power Plant
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Produces <a href="terms.html#infantry">infantry</a>. Production rate lowers to 67% if the <a href="terms.html#base">base</a> is less than 100% powered, to 40% if less than 50% powered, or to 25% if the <a href="terms.html#power">power</a> hits 0%.
+                    
+                </td>
+            </tr>
+        
+            <tr id="arco" class="multirow">
+                <td>16</td>
+                <td><code>arco</code></td>
+                <td>Civilian &#34;Tanker&#34;</td>
+                <td>100</td>
+                <td>2</td>
+                <td></td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Setpiece
+                    
+                </td>
+            </tr>
+        
+            <tr id="fix" class="multirow">
+                <td>17</td>
+                <td><code>fix</code></td>
+                <td>Repair facility</td>
+                <td>400</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>30</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            8
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            8
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        5
+                                    
+                                </td>
+                                <td>
+                                    
+                                        5
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#nuke">
+                            Power plant
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#nuk2">
+                            Advanced Power Plant
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Repairs vehicles
+                    
+                </td>
+            </tr>
+        
+            <tr id="bio" class="multirow">
+                <td>18</td>
+                <td><code>bio</code></td>
+                <td>Bio research lab</td>
+                <td>300</td>
+                <td>2</td>
+                <td>500</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>40</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            99
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        99
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#hosp">
+                            Civilian hospital
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Setpiece. Doesn&#x27;t do anything even though it can technically be built. Can store 100 <a href="terms.html#credits">credits</a>.
+                    
+                </td>
+            </tr>
+        
+            <tr id="hand" class="multirow">
+                <td>19</td>
+                <td><code>hand</code></td>
+                <td>Hand of Nod</td>
+                <td>400</td>
+                <td>3</td>
+                <td>300</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>20</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            2
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        0
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#nuke">
+                            Power plant
+                        </a>
+                    
+                        <br/>/
+                        <a href="structures.html#nuk2">
+                            Advanced Power Plant
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Produces <a href="terms.html#infantry">infantry</a>. Production rate lowers to 67% if the <a href="terms.html#base">base</a> is less than 100% powered, to 40% if less than 50% powered, or to 25% if the <a href="terms.html#power">power</a> hits 0%.
+                    
+                </td>
+            </tr>
+        
+            <tr id="tmpl" class="multirow">
+                <td>20</td>
+                <td><code>tmpl</code></td>
+                <td>Temple of Nod</td>
+                <td>1000</td>
+                <td>4</td>
+                <td>3000</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-aluminum">
+                            <abbr title="Aluminum">Al</abbr>
+                        </a>
+                    
+                </td>
+                <td>150</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            13<strong>*</strong>
+                                            
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                        7
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#hq">
+                            Communications center
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Provides <a href="terms.html#nuclear-missile">nuclear missile</a> ability. The ability pauses its charging if the <a href="terms.html#base">base</a> experiences a <a href="terms.html#power">power</a> shortage.
+                    
+                        <br/><strong>*</strong> GDI can never build this in <a href="terms.html#singleplayer">singleplayer</a>, even if Nod <a href="structures.html#fact">construction yard</a> is captured.
+                    
+                </td>
+            </tr>
+        
+            <tr id="eye" class="multirow">
+                <td>21</td>
+                <td><code>eye</code></td>
+                <td>Advanced Communications Center</td>
+                <td>500</td>
+                <td>10</td>
+                <td>2800</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>200</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            13<strong>*</strong>
+                                            
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        7
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                        
+                        <a href="structures.html#hq">
+                            Communications center
+                        </a>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Provides <a href="terms.html#ion-cannon">ion cannon</a> ability in addition to <a href="terms.html#minimap">minimap</a>. If there is a <a href="terms.html#power">power</a> shortage, the minimap turns off and the ion cannon ability pauses its charging.
+                    
+                        <br/><strong>*</strong> Nod can never build this in <a href="terms.html#singleplayer">singleplayer</a>, even if GDI <a href="structures.html#fact">construction yard</a> is captured
+                    
+                </td>
+            </tr>
+        
+            <tr id="miss" class="multirow">
+                <td>22</td>
+                <td><code>miss</code></td>
+                <td>Prison</td>
+                <td>200</td>
+                <td>2</td>
+                <td></td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                        <a href="units.html#armor-wood">
+                            <abbr title="Wood">Wo</abbr>
+                        </a>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    Setpiece, used as an objective in various <a href="terms.html#scenario">scenarios</a>
+                    
+                </td>
+            </tr>
+        
+            <tr id="sbag" class="multirow">
+                <td>60</td>
+                <td><code>sbag</code></td>
+                <td>Sandbag wall</td>
+                <td>20</td>
+                <td>0</td>
+                <td>50</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            8
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            5
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                                <td>
+                                    
+                                        2
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    <a href="structures.html#sbag">Sandbags</a> are implemented internally as <a href="terms.html#overlay">overlays</a>, meaning they take damage differently to other <a href="terms.html#structure">structures</a>. See &quot;<a href="terms.html#wall">Walls</a>&quot;. Each <a href="structures.html#sbag">sandbag wall</a> section has a single damage level of <a href="terms.html#strength">strength</a> 20.
+                    
+                </td>
+            </tr>
+        
+            <tr id="cycl" class="multirow">
+                <td>61</td>
+                <td><code>cycl</code></td>
+                <td>Chainlink Fence</td>
+                <td>20</td>
+                <td>0</td>
+                <td>75</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            9
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            9
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        5
+                                    
+                                </td>
+                                <td>
+                                    
+                                        5
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    <a href="structures.html#cycl">Chainlink fences</a> are implemented internally as <a href="terms.html#overlay">overlays</a>, meaning they take damage differently to other <a href="terms.html#structure">structures</a>. See &quot;<a href="terms.html#wall">Walls</a>&quot;. Each chainlink fence section has 2 damage levels, each of <a href="terms.html#strength">strength</a> 10.
+                    
+                </td>
+            </tr>
+        
+            <tr id="brik" class="multirow">
+                <td>62</td>
+                <td><code>brik</code></td>
+                <td>Concrete wall</td>
+                <td>210</td>
+                <td>0</td>
+                <td>100</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            13
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            13
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        7
+                                    
+                                </td>
+                                <td>
+                                    
+                                        7
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    These are implemented internally as <a href="terms.html#overlay">overlays</a>, meaning they take damage differently to other <a href="terms.html#structure">structures</a>. See &quot;<a href="terms.html#wall">Walls</a>&quot;. Each <a href="structures.html#brik">concrete wall</a> section has 3 damage levels, each of <a href="terms.html#strength">strength</a> 70.
+                    
+                </td>
+            </tr>
+        
+            <tr id="barb" class="multirow">
+                <td>63</td>
+                <td><code>barb</code></td>
+                <td>Barbed wire</td>
+                <td>2</td>
+                <td>0</td>
+                <td>25</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            98
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                        
+                                            98
+                                        
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        98
+                                    
+                                </td>
+                                <td>
+                                    
+                                        98
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    These are implemented internally as <a href="terms.html#overlay">overlays</a>, meaning they take damage differently to other <a href="terms.html#structure">structures</a>. See &quot;<a href="terms.html#wall">Walls</a>&quot;. Each <a href="structures.html#barb">barbed wire</a> section has a single damage level of <a href="terms.html#strength">strength</a> 2.
+                    
+                </td>
+            </tr>
+        
+            <tr id="wood" class="multirow">
+                <td>64</td>
+                <td><code>wood</code></td>
+                <td>Wooden fence</td>
+                <td>2</td>
+                <td>0</td>
+                <td>25</td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>0</td>
+                <td>
+                    <table class="build-level-matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <a href="map-settings.html#house-goodguy">
+                                        <abbr title="GDI">G</abbr>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="map-settings.html#house-badguy">
+                                        <abbr title="Nod">N</abbr>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#singleplayer">
+                                        <abbr title="Singleplayer">S</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        
+                                            98
+                                        
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="terms.html#multiplayer">
+                                        <abbr title="Multiplayer">M</abbr>
+                                    </a>
+                                </th>
+                                <td>
+                                    
+                                        99
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" class="notes">
+                    These are implemented internally as <a href="terms.html#overlay">overlays</a>, meaning they take damage differently to other <a href="terms.html#structure">structures</a>. See &quot;<a href="terms.html#wall">Walls</a>&quot;. Each <a href="structures.html#wood">wooden fence</a> section has a single damage level of <a href="terms.html#strength">strength</a> 2.
+                    
+                </td>
+            </tr>
+        
+    </tbody>
+</table>
+        </main>
+        <footer>
+            A reference for the C&amp;C Remastered Tiberian Dawn map editor 
+            - version 1.0
+            - by Mark Frimston 
+            - based on game version 
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
+                2020-06-22 post-launch patch
+            </a>
+        </footer>
+    </body>
+</html>

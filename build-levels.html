@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Build Levels.Html - Tiberian Dawn Editor Reference</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">C&amp;C Tiberian Dawn Editor Reference</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="terms.html">Terminology</a></li>
+                <li><a href="map-settings.html">Map Settings</a></li>
+                <li><a href="team-types.html">Team Types</a></li>
+                <li><a href="triggers.html">Triggers</a></li>
+                <li><a href="object-settings.html">Object Settings</a></li>
+                <li><a href="waypoints.html">Waypoints</a></li>
+                <li><a href="build-levels.html">Build Levels</a></li>
+                <li><a href="tech-trees.html">Tech Trees</a></li>
+                <li><a href="structures.html">Structure Types</a></li>
+                <li><a href="units.html">Unit Types</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Build Levels</h2>
+<p>
+    number indicating a technology level, higher being more sophisticated. A <a href="terms.html#scenario">scenario</a> has a <a href="terms.html#build-level">build level</a> which determines what <a href="terms.html#unit">units</a> and <a href="terms.html#building">buildings</a> the player has access to. For <a href="terms.html#singleplayer">singleplayer</a> scenarios this corresponds to the technology that would be available when this many scenarios into the campaign. The tech levels are different for <a href="terms.html#multiplayer">multiplayer</a>. For both single and multi-player, level 99 and above should be considered off-limits as it allows the construction of things that aren&#x27;t really intended to be built, such as the <a href="structures.html#hosp">hospital</a> and <a href="structures.html#bio">bio research lab</a>, which don&#x27;t do anything and cause graphical bugs in the <a href="terms.html#sidebar">sidebar</a>. For the full <a href="terms.html#tech-tree">tech tree</a>, use build level 98. Note that the <a href="terms.html#ai">AI</a> ignores tech level restrictions. See &quot;<a href="build-levels.html">Build Levels</a>&quot;
+</p>
+<nav>
+    <ul>
+        <li><a href="#single">Singleplayer</a></li>
+        <li><a href="#multi">Multiplayer</a></li>
+    </ul>
+</nav>
+<section>
+    <h3 id="single"><a href="terms.html#singleplayer">Singleplayer</a></h3>
+    <table class="build-level-table">
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>GDI</th>
+                <th>Both</th>
+                <th>Nod</th>
+            </tr>
+        </tead>
+        <tbody>
+            
+                <tr id="sgl-1">
+                    <th>1</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#pyle">Infantry barracks</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#nuke">Power plant</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#e1">Minigunner</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-2">
+                    <th>2</th>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#proc">Tiberium refinery</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="structures.html#silo">Tiberium silo</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#e7">Engineer</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#hand">Hand of Nod</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-3">
+                    <th>3</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#e2">Grenadier</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#hq">Communications center</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#e3">Rocket Soldier</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-5">
+                    <th>5</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#weap">Weapons Factory</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#apc">APC</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#jeep">Humm-vee</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#sam">SAM site</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="structures.html#afld">Delivery Airstrip</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="structures.html#sbag">Sandbag wall</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#e4">Flamethrower</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#ltnk">M2-F Bradley Light Tank</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#bggy">Dune Buggy</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#bike">Recon Bike</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-7">
+                    <th>7</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#gtwr">Guard tower</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#mtnk">M1 Abrams Medium Tank</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#harv">Harvester</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-8">
+                    <th>8</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#sbag">Sandbag wall</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#e3">Rocket Soldier</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#fix">Repair facility</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#gun">Turret</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-9">
+                    <th>9</th>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#cycl">Chainlink Fence</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#ftnk">Flame Tank</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#arty">Artillery</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-10">
+                    <th>10</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#hpad">Orca/Apache Helipad</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#orca">Orca VTOL</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#heli">Apache Gunship</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-11">
+                    <th>11</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#msam">MLRS</a>
+                                *
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#obli">Obelisk of Light</a>
+                                *
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-12">
+                    <th>12</th>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#nuk2">Advanced Power Plant</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#stnk">Stealth Tank</a>
+                                *
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-13">
+                    <th>13</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#atwr">Advanced Guard Tower</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="structures.html#nuk2">Advanced Power Plant</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="structures.html#eye">Advanced Communications Center</a>
+                                *
+                            
+                                <br/>
+                                 
+                                <a href="units.html#htnk">Mammoth Tank</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#brik">Concrete wall</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#tmpl">Temple of Nod</a>
+                                *
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-15">
+                    <th>15</th>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#mcv">MCV</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-98">
+                    <th>98</th>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#wood">Wooden fence</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#barb">Barbed wire</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#mbo">Commando</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#tran">Chinook transport helicopter</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="units.html#mlrs">SSM Launcher</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="sgl-99">
+                    <th>99</th>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#hosp">Civilian hospital</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#mhq">Mobile Headquarters</a>
+                                
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                 
+                                <a href="structures.html#bio">Bio research lab</a>
+                                
+                            
+                                <br/>
+                                 
+                                <a href="units.html#e5">Chem Trooper</a>
+                                
+                            
+                        </td>
+                    
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
+<section>
+    <h3 id="multi"><a href="terms.html#multiplayer">Multiplayer</a></h3>
+    <table class="build-level-table">
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>GDI</th>
+                <th>Both</th>
+                <th>Nod</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr id="mlt-0">
+                    <th>0</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#pyle">Infantry barracks</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#nuke">Power plant</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#hand">Hand of Nod</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-1">
+                    <th>1</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#e2">Grenadier</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#proc">Tiberium refinery</a>
+                            
+                                <br/>
+                                
+                                <a href="structures.html#silo">Tiberium silo</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#e1">Minigunner</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#e4">Flamethrower</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-2">
+                    <th>2</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#weap">Weapons Factory</a>
+                            
+                                <br/>
+                                
+                                <a href="structures.html#gtwr">Guard tower</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#jeep">Humm-vee</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#hq">Communications center</a>
+                            
+                                <br/>
+                                
+                                <a href="structures.html#sbag">Sandbag wall</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#e3">Rocket Soldier</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#harv">Harvester</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#gun">Turret</a>
+                            
+                                <br/>
+                                
+                                <a href="structures.html#afld">Delivery Airstrip</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#bike">Recon Bike</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-3">
+                    <th>3</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#mtnk">M1 Abrams Medium Tank</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#e7">Engineer</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#ltnk">M2-F Bradley Light Tank</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-4">
+                    <th>4</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#atwr">Advanced Guard Tower</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#apc">APC</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#obli">Obelisk of Light</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#ftnk">Flame Tank</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#bggy">Dune Buggy</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-5">
+                    <th>5</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#htnk">Mammoth Tank</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#nuk2">Advanced Power Plant</a>
+                            
+                                <br/>
+                                
+                                <a href="structures.html#fix">Repair facility</a>
+                            
+                                <br/>
+                                
+                                <a href="structures.html#cycl">Chainlink Fence</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#stnk">Stealth Tank</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-6">
+                    <th>6</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="units.html#orca">Orca VTOL</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#hpad">Orca/Apache Helipad</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#tran">Chinook transport helicopter</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#sam">SAM site</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#arty">Artillery</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#heli">Apache Gunship</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-7">
+                    <th>7</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#eye">Advanced Communications Center</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#brik">Concrete wall</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#mbo">Commando</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#msam">MLRS</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#mcv">MCV</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#tmpl">Temple of Nod</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#e5">Chem Trooper</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#mlrs">SSM Launcher</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-98">
+                    <th>98</th>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#barb">Barbed wire</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr id="mlt-99">
+                    <th>99</th>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#wood">Wooden fence</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#hosp">Civilian hospital</a>
+                            
+                                <br/>
+                                
+                                <a href="units.html#mhq">Mobile Headquarters</a>
+                            
+                        </td>
+                    
+                        <td>
+                            
+                                
+                                
+                                <a href="structures.html#bio">Bio research lab</a>
+                            
+                        </td>
+                    
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
+        </main>
+        <footer>
+            A reference for the C&amp;C Remastered Tiberian Dawn map editor 
+            - version 1.0
+            - by Mark Frimston 
+            - based on game version 
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
+                2020-06-22 post-launch patch
+            </a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Types.Html - Tiberian Dawn Editor Reference</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">C&amp;C Tiberian Dawn Editor Reference</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="terms.html">Terminology</a></li>
+                <li><a href="map-settings.html">Map Settings</a></li>
+                <li><a href="team-types.html">Team Types</a></li>
+                <li><a href="triggers.html">Triggers</a></li>
+                <li><a href="object-settings.html">Object Settings</a></li>
+                <li><a href="waypoints.html">Waypoints</a></li>
+                <li><a href="build-levels.html">Build Levels</a></li>
+                <li><a href="tech-trees.html">Tech Trees</a></li>
+                <li><a href="structures.html">Structure Types</a></li>
+                <li><a href="units.html">Unit Types</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Team Types</h2>
+<p>a group of <a href="terms.html#unit">units</a>. <a href="team-types.html">Team types</a> are used to instruct <a href="terms.html#ai">AI</a> what to attack with, what player receives as <a href="terms.html#reinforcements">reinforcements</a>, etc. A <a href="terms.html#team">team</a> has a list of <a href="terms.html#mission">missions</a> which it carries out in order. There is a max limit of 60 teams in the game at once, and a limit of 60 team types.</p>
+<nav>
+    <ul>
+        <li><a href="#settings">Team Settings</a></li>
+        <li><a href="#missions">Team Mission Types</a></li>
+    </ul>
+</nav>
+
+
+<section>
+    <h3 id="settings">Team Settings</h3>
+    
+        
+    <h4>Auto-Create</h4>
+    
+        <p><a href="terms.html#ai">AI</a> will not consider <a href="terms.html#building">building</a> <a href="terms.html#team">teams</a> marked auto-create until the &quot;Auto-create teams&quot; <a href="terms.html#action">action</a> is triggered (see &quot;<a href="triggers.html#actions">Action Types</a>&quot;). Note that the AI will always choose from the other <a href="team-types.html">team types</a> assigned to its <a href="terms.html#house">House</a>. Note also, though, that the AI will not actually produce any <a href="terms.html#unit">units</a> towards those teams until the &quot;Production&quot; <a href="terms.html#trigger-action">trigger action</a> is activated.</p>
+    
+
+    
+        
+    <h4>Fear</h4>
+    
+        <p>Unused. Is never applied to <a href="terms.html#infantry">infantry</a> in <a href="terms.html#team">team</a> - they always begin at full bravery. See &quot;<a href="terms.html#fear">Fear</a>&quot; for the explanation of the infantry attribute in general.</p>
+    
+
+    
+        
+    <h4>House</h4>
+    
+        <p>Which side, GDI/Nod/etc. See <a href="map-settings.html#houses">Houses</a>. The <a href="terms.html#ai">AI</a> will only consider <a href="terms.html#building">building</a> <a href="terms.html#team">teams</a> for its own <a href="terms.html#house">house</a>.</p>
+    
+
+    
+        
+    <h4>Init Num</h4>
+    
+        <p>Initial number of this type of <a href="terms.html#team">team</a></p>
+    
+
+    
+        
+    <h4>Learning</h4>
+    
+        <p>Unused. Does nothing</p>
+    
+
+    
+        
+    <h4>Max Allowed</h4>
+    
+        <p>Max number of this <a href="terms.html#team">team</a> type the <a href="terms.html#house">house</a> will allow at one time. Note there is also a limit of 60 on the total number of teams across all <a href="map-settings.html#houses">houses</a>.</p>
+    
+
+    
+        
+    <h4>Mercenary</h4>
+    
+        <p>Unused. Does nothing</p>
+    
+
+    
+        
+    <h4>Missions</h4>
+    
+        
+            
+    <h5>Argument</h5>
+    
+        <p>Value to accompany <a href="terms.html#mission">mission</a>.</p>
+    
+
+        
+            
+    <h5>Mission</h5>
+    
+        <p>Type of behaviour or &quot;<a href="terms.html#mission">mission</a>&quot; for the <a href="terms.html#team">team</a> as a whole to execute. See &quot;<a href="team-types.html#missions">Team Mission Types</a>&quot;</p>
+    
+
+        
+    
+
+    
+        
+    <h4>Prebuilt</h4>
+    
+        <p><a href="terms.html#ai">AI</a> will try to build the <a href="terms.html#unit">units</a> required to make one instance of this <a href="terms.html#team">team</a> type even if no such team is active.</p>
+    
+
+    
+        
+    <h4>Priority</h4>
+    
+        <p>Recruitment priority (0-15). <a href="terms.html#ai">AI</a> favours <a href="terms.html#building">building</a> <a href="team-types.html">team types</a> with higher priority value. If AI does not currently own a <a href="terms.html#unit">unit</a> type required for a <a href="terms.html#team">team</a>, it halves that team type&#x27;s priority.</p>
+    
+
+    
+        
+    <h4>Reinforcable</h4>
+    
+        <p>If this <a href="terms.html#team">team</a> drops below 1/3 its desired number of <a href="terms.html#unit">units</a>, it will recruit new members</p>
+    
+
+    
+        
+    <h4>Roundabout</h4>
+    
+        <p>The <a href="terms.html#team">team</a> will prefer low-<a href="terms.html#risk">risk</a> <a href="terms.html#region">regions</a> when <a href="terms.html#pathfinding">pathfinding</a>. A region&#x27;s risk is based on the risk values of the <a href="terms.html#unit">units</a> inside it.</p>
+    
+
+    
+        
+    <h4>Suicide</h4>
+    
+        <p>The <a href="terms.html#team">team</a> won&#x27;t be distracted from moving to its target by incoming fire</p>
+    
+
+    
+        
+    <h4>Teams</h4>
+    
+        
+            
+    <h5>Count</h5>
+    
+        <p>Desired quantity of this <a href="terms.html#unit">unit</a> type</p>
+    
+
+        
+            
+    <h5>Type</h5>
+    
+        <p>Type of <a href="terms.html#unit">unit</a> in <a href="terms.html#team">team</a>. See &quot;<a href="units.html">Unit Types</a>&quot;</p>
+    
+
+        
+    
+
+        
+</section>
+
+<section>
+    <h3 id="missions">Team Mission Types</h3>
+    a <a href="terms.html#unit">unit</a>/<a href="terms.html#structure">structure</a> behaviour, for <a href="terms.html#ai">AI</a> scripting. There are two categories of <a href="terms.html#mission">missions</a>, one for individual <a href="terms.html#object">object</a> behaviours (see &quot;<a href="object-settings.html#missions">Unit Mission Types</a>&quot;) and one for <a href="terms.html#team">team</a> behaviours (see &quot;<a href="team-types.html#missions">Team Mission Types</a>&quot;). The meaning of certain unit missions varies depending on the object using it. For example the &quot;Unload&quot; unit mission is used when an <a href="units.html#apc">APC</a> delivers what it is carrying, but also when an <a href="units.html#mcv">MCV</a> unpacks, or when a <a href="structures.html#weap">weapons factory</a> produces a unit. The term &quot;Mission&quot; is also used loosely to refer to a <a href="terms.html#scenario">Scenario</a>.
+    <table>
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Args</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>-1</td>
+                    <td>(none)</td>
+                    <td>
+                        
+                    </td>
+                    <td>no <a href="terms.html#mission">mission</a></td>
+                </tr>
+            
+                <tr>
+                    <td>0</td>
+                    <td>Attack Base</td>
+                    <td>
+                        
+                            arg: timeout
+                        
+                    </td>
+                    <td>Despite the name, this does the same thing as &quot;Attack <a href="terms.html#unit">Units</a>&quot; and instructs the <a href="terms.html#team">team</a> to attack the most threatening unit OR <a href="terms.html#structure">structure</a>. See &quot;Attack Units&quot;</td>
+                </tr>
+            
+                <tr>
+                    <td>1</td>
+                    <td>Attack Units</td>
+                    <td>
+                        
+                            arg: timeout
+                        
+                    </td>
+                    <td>Despite the name, attacks the <a href="terms.html#unit">unit</a> OR <a href="terms.html#structure">structure</a> the <a href="terms.html#team">team</a> considers to be most threatening to it (See &quot;<a href="terms.html#threat">Threat</a>&quot;). Argument is how much time to allow before abandoning this <a href="terms.html#mission">mission</a>, in 1/10ths of a minute (e.g. 15 would be 1m 30s).</td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td>Attack Civil</td>
+                    <td>
+                        
+                            arg: timeout
+                        
+                    </td>
+                    <td>Similar to &quot;Attack <a href="terms.html#unit">Units</a>&quot;, but only <a href="terms.html#civilian">civilian</a> units and <a href="terms.html#structure">structures</a> are considered. See &quot;Attack Units&quot;.</td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td>Rampage</td>
+                    <td>
+                        
+                            arg: timeout
+                        
+                    </td>
+                    <td>Does the same thing as &quot;Attack <a href="terms.html#unit">Units</a>&quot;. See &quot;Attack Units&quot;.</td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td>Defend Base</td>
+                    <td>
+                        
+                    </td>
+                    <td>Does nothing.</td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td>Move</td>
+                    <td>
+                        
+                            arg: waypoint
+                        
+                    </td>
+                    <td>move to a specified <a href="terms.html#waypoint">waypoint</a>. Argument is the waypoint index. See &quot;<a href="waypoints.html">Waypoints</a>&quot;</td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td>Move to Cell</td>
+                    <td>
+                        
+                            arg: cell
+                        
+                    </td>
+                    <td>move to a specified <a href="terms.html#cell">cell</a>. Argument is the cell number.</td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td>Retreat</td>
+                    <td>
+                        
+                    </td>
+                    <td>Does nothing.</td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td>Guard</td>
+                    <td>
+                        
+                            arg: timeout
+                        
+                    </td>
+                    <td>instructs <a href="terms.html#team">team</a> to regroup and sets their individual behaviours to &quot;Guard&quot; (See &quot;<a href="object-settings.html#missions">Unit Mission Types</a>&quot;). Argument is how much time to allow before abandoning this <a href="terms.html#mission">mission</a>, in 1/10ths of a minute (e.g. 15 would be 1m 30s).</td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td>Loop</td>
+                    <td>
+                        
+                            arg: mission index
+                        
+                    </td>
+                    <td>jumps back to a previous <a href="terms.html#mission">mission</a> in the <a href="terms.html#team">team</a>&#x27;s mission list. Argument is the index in the mission list to jump to e.g. 0 to go back to the start.</td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td>Attack Tarcom</td>
+                    <td>
+                        
+                            arg: target ptr
+                        
+                    </td>
+                    <td>Attack the specified <a href="terms.html#tarcom">tarcom</a>. The argument identifies the type and raw memory address of the target <a href="terms.html#object">object</a>, most likely making this <a href="terms.html#mission">mission</a> type infeasible for selection in the <a href="terms.html#map-editor">map editor</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td>Unload</td>
+                    <td>
+                        
+                            arg: waypoint
+                        
+                    </td>
+                    <td>move to the specified <a href="terms.html#waypoint">waypoint</a> and unload at it. Argument is the waypoint index. See &quot;<a href="waypoints.html">Waypoints</a>&quot;</td>
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
+        </main>
+        <footer>
+            A reference for the C&amp;C Remastered Tiberian Dawn map editor 
+            - version 1.0
+            - by Mark Frimston 
+            - based on game version 
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
+                2020-06-22 post-launch patch
+            </a>
+        </footer>
+    </body>
+</html>

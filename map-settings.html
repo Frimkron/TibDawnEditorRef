@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map Settings.Html - Tiberian Dawn Editor Reference</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">C&amp;C Tiberian Dawn Editor Reference</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="terms.html">Terminology</a></li>
+                <li><a href="map-settings.html">Map Settings</a></li>
+                <li><a href="team-types.html">Team Types</a></li>
+                <li><a href="triggers.html">Triggers</a></li>
+                <li><a href="object-settings.html">Object Settings</a></li>
+                <li><a href="waypoints.html">Waypoints</a></li>
+                <li><a href="build-levels.html">Build Levels</a></li>
+                <li><a href="tech-trees.html">Tech Trees</a></li>
+                <li><a href="structures.html">Structure Types</a></li>
+                <li><a href="units.html">Unit Types</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Map Settings</h2>
+<nav>
+    <ul>
+        <li><a href="#settings">Settings</a></li>
+        <li><a href="#houses">Houses</a></li>
+        <li><a href="#theaters">Theater Types</a></li>
+        <li><a href="#sources">Reinforcement Source Types</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h3 id="settings">Settings</h3>
+    
+    
+        
+        <h4>Basic</h4>
+        
+            
+                
+        <h5>Author</h5>
+        
+            <p>name of <a href="terms.html#scenario">scenario</a>&#x27;s author</p>
+        
+    
+            
+                
+        <h5>Build Level</h5>
+        
+            <p>a number to indicate what level of tech is available to build. See &quot;<a href="build-levels.html">Build Levels</a>&quot;</p>
+        
+    
+            
+                
+        <h5>Carryover</h5>
+        
+            <p>Not used. Old feature where <a href="terms.html#credits">credits</a> were carried over from the previous <a href="terms.html#scenario">scenario</a>. (fixed cap)</p>
+        
+    
+            
+                
+        <h5>Name</h5>
+        
+            <p><a href="terms.html#scenario">scenario</a> name</p>
+        
+    
+            
+                
+        <h5>Percent</h5>
+        
+            <p>Not used. Old feature where <a href="terms.html#credits">credits</a> were carried over from the previous <a href="terms.html#scenario">scenario</a> (percentage)</p>
+        
+    
+            
+                
+        <h5>Player</h5>
+        
+            <p>which <a href="terms.html#house">house</a> you play as for this <a href="terms.html#scenario">scenario</a></p>
+        
+    
+            
+                
+        <h5>Single-Player</h5>
+        
+            <p>whether this is a <a href="terms.html#singleplayer">singleplayer</a> <a href="terms.html#scenario">scenario</a> or <a href="terms.html#multiplayer">multiplayer</a></p>
+        
+    
+            
+        
+    
+    
+        
+        <h4>Briefing</h4>
+        
+            <p>the description of the <a href="terms.html#scenario">scenario</a>&#x27;s objective. Displayed before the scenario begins, to inform the player of what they must do in order to win.</p>
+        
+    
+    
+        
+        <h4>Players</h4>
+        
+            
+                
+        <h5>House</h5>
+        
+            
+                
+        <h6>Allies</h6>
+        
+            <p><a href="map-settings.html#houses">Houses</a> fighting on the same side as this one. They will not attack, nor be attackable by, this <a href="terms.html#house">house</a>. Applies only to <a href="terms.html#singleplayer">singleplayer</a>. By default, GDI sides with the <a href="terms.html#civilian">civilians</a>. See also &quot;Houses&quot;</p>
+        
+    
+            
+                
+        <h6>Credits</h6>
+        
+            <p>1/100th the amount of starting <a href="terms.html#credits">credits</a>, e.g. 500 means 50,000 credits</p>
+        
+    
+            
+                
+        <h6>Edge</h6>
+        
+            <p>where this <a href="terms.html#house">house</a>&#x27;s <a href="terms.html#reinforcements">reinforcements</a> come from when the &quot;Reinforce&quot; <a href="terms.html#trigger-action">trigger action</a> fires. See &quot;<a href="map-settings.html#sources">Source Types</a>&quot; and &quot;<a href="triggers.html">Triggers</a>&quot;</p>
+        
+    
+            
+                
+        <h6>Max Buildings</h6>
+        
+            <p>Max number of <a href="terms.html#building">buildings</a> that can be built by this <a href="terms.html#house">house</a>. Note there is also a limit of 500 buildings total across all <a href="map-settings.html#houses">houses</a>.</p>
+        
+    
+            
+                
+        <h6>Max Units</h6>
+        
+            <p>Max number of <a href="terms.html#unit">units</a> that can be built by this <a href="terms.html#house">house</a>. Note there are also limits of 500 units, 500 <a href="terms.html#infantry">infantry</a> and 100 aircraft total across all <a href="map-settings.html#houses">houses</a>.</p>
+        
+    
+            
+        
+    
+            
+        
+    
+    
+        
+        <h4>Theater</h4>
+        
+            <p>This is chosen when a new <a href="terms.html#map">map</a> is first created. The type of environment the <a href="terms.html#scenario">scenario</a> takes place in. See &quot;<a href="map-settings.html#theaters">Theater Types</a>&quot;</p>
+        
+    
+    
+</section>
+
+<section>
+    <h3 id="houses">Houses</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr id="house-badguy">
+                    <td><code>BadGuy</code></td>
+                    <td>Brotherhood of Nod (Nod)</td>
+                </tr>
+            
+                <tr id="house-goodguy">
+                    <td><code>GoodGuy</code></td>
+                    <td>Global Defense Initiative (GDI)</td>
+                </tr>
+            
+                <tr id="house-multi1-6">
+                    <td><code>Multi1-6</code></td>
+                    <td>Used for the players in a <a href="terms.html#multiplayer">multiplayer</a> match, of which there can be up to six.</td>
+                </tr>
+            
+                <tr id="house-neutral">
+                    <td><code>Neutral</code></td>
+                    <td><a href="terms.html#civilian">Civilians</a></td>
+                </tr>
+            
+                <tr id="house-special">
+                    <td><code>Special</code></td>
+                    <td><a href="terms.html#disaster-containment-team">Disaster Containment Team</a> (dino <a href="terms.html#scenario">scenarios</a>)</td>
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3 id="theaters">Theater Types</h3>
+    <p>Refers to the setting for the <a href="terms.html#scenario">scenario</a>. This primarily determines the graphics used for the <a href="terms.html#map">map</a>, ambient sounds, etc. See &quot;<a href="map-settings.html#theaters">Theater Types</a>&quot;</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td></td>
+                    <td><code>(none)</code></td>
+                    <td>No Theater</td>
+                </tr>
+            
+                <tr>
+                    <td>0</td>
+                    <td><code>desert</code></td>
+                    <td>Desert. Where the Nod campaign takes place</td>
+                </tr>
+            
+                <tr>
+                    <td>1</td>
+                    <td><code>jungle</code></td>
+                    <td>Not used.</td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td><code>temperate</code></td>
+                    <td>Temperate. Where most of the GDI campaign takes place.</td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td><code>winter</code></td>
+                    <td>Tile set very similar to &quot;temperate&quot; but with a subtle snow covering on everything.</td>
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3 id="sources">Reinforcement Source Types</h3>
+    <p></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>-1</td>
+                    <td><code>(none)</code></td>
+                    <td>No source</td>
+                </tr>
+            
+                <tr>
+                    <td>0</td>
+                    <td><code>North</code></td>
+                    <td>North edge of <a href="terms.html#map">map</a>. Starting x coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                </tr>
+            
+                <tr>
+                    <td>1</td>
+                    <td><code>East</code></td>
+                    <td>East edge  of <a href="terms.html#map">map</a>. Starting y coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td><code>South</code></td>
+                    <td>South edge of <a href="terms.html#map">map</a>. Starting x coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td><code>West</code></td>
+                    <td>West edge of <a href="terms.html#map">map</a>. Starting y coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td><code>Shipping</code></td>
+                    <td>Shipping lane. Not selectable in editor but automatically selected if the reinforcement is a <a href="units.html#boat">gunboat</a>. Boat is put into guard mode and told to sail east to west and back again. Start position is on the east edge, aligned with the northmost row of <a href="terms.html#cell">cells</a> consisting soley of water.</td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td><code>Beach</code></td>
+                    <td>Selects beach to land upon. Not selectable in editor but automatically selected if <a href="terms.html#team">team</a> contains a <a href="units.html#lst">landing hovercraft</a>. <a href="units.html#lst">Lander</a> begins at the south edge of the <a href="terms.html#map">map</a>, just outside the bounds, and is told to head north in a straight line and unload once it reaches land. Starting x coordinate is chosen by finding those where there is a column of sea <a href="terms.html#cell">cells</a> from the starting y coordinate to a clear land cell with two additional clear land cells north of that. The algorithm then narrows this list down to those entries where the x coordinates to the immediate east and west of it are also in the list or, if there are no such entries, it keeps the original list. Finally the entry 3/4 of the way through this list, when ordered west to east, is selected. If <a href="terms.html#theater-type">Theater type</a> is &quot;desert&quot;, the start position is one cell further south.</td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td><code>Air</code></td>
+                    <td>Dropped by air. Not selectable in editor but selected automatically if <a href="terms.html#team">team</a> contains a <a href="units.html#tran">transport helicopter</a>. If team also contains <a href="terms.html#unit">units</a> to go inside it, transport is not controllable by the player and is told to unload on arrival. If team is just the transport, it moves in and becomes controllable by the player. Landing position is chosen at a random, in-bounds, unoccupied <a href="terms.html#cell">cell</a> up to 6 cells from the <a href="terms.html#reinforcements">reinforcements</a> <a href="terms.html#waypoint">waypoint</a> (#27), prefering closer cells. If the waypoint isn&#x27;t defined, cell currently in the top-left corner of the <a href="terms.html#tactical-view">tactical view</a> is used (presumably for debugging purposes)</td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td><code>Visible</code></td>
+                    <td>Not used. Dropped at a random <a href="terms.html#cell">cell</a> from those currently inside the <a href="terms.html#tactical-view">tactical view</a> and within the bounds of the <a href="terms.html#map">map</a>, i.e. where the player can see. Ignored for <a href="terms.html#reinforcements">reinforcements</a> belonging to the player.</td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td><code>Enemy Base</code></td>
+                    <td>Not used. Does nothing.</td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td><code>Home Base</code></td>
+                    <td>Not used. Does nothing.</td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td><code>Ocean</code></td>
+                    <td>Not used. Does the same thing as &quot;Beach&quot;.</td>
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
+        </main>
+        <footer>
+            A reference for the C&amp;C Remastered Tiberian Dawn map editor 
+            - version 1.0
+            - by Mark Frimston 
+            - based on game version 
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
+                2020-06-22 post-launch patch
+            </a>
+        </footer>
+    </body>
+</html>
