@@ -129,14 +129,14 @@
                 
         <h6>Edge</h6>
         
-            <p>where this <a href="terms.html#house">house</a>&#x27;s <a href="terms.html#reinforcements">reinforcements</a> come from when the &quot;Reinforce&quot; <a href="terms.html#trigger-action">trigger action</a> fires. See &quot;<a href="map-settings.html#sources">Source Types</a>&quot; and &quot;<a href="triggers.html">Triggers</a>&quot;</p>
+            <p>where this <a href="terms.html#house">house</a>&#x27;s <a href="terms.html#reinforcements">reinforcements</a> come from when the &quot;<a href="terms.html#reinforcements">Reinforce</a>&quot; <a href="terms.html#trigger-action">trigger action</a> fires. See &quot;<a href="map-settings.html#sources">Source Types</a>&quot; and &quot;<a href="triggers.html">Triggers</a>&quot;</p>
         
     
             
                 
         <h6>Max Buildings</h6>
         
-            <p>Max number of <a href="terms.html#building">buildings</a> that can be built by this <a href="terms.html#house">house</a>. Note there is also a limit of 500 buildings total across all <a href="map-settings.html#houses">houses</a>.</p>
+            <p>Max number of <a href="terms.html#structure">buildings</a> that can be built by this <a href="terms.html#house">house</a>. Note there is also a limit of 500 buildings total across all <a href="map-settings.html#houses">houses</a>.</p>
         
     
             
@@ -164,6 +164,7 @@
 
 <section>
     <h3 id="houses">Houses</h3>
+    <p>A side, GDI/Nod etc. Holdover from Dune II.</p>
     <table>
         <thead>
             <tr>
@@ -204,7 +205,7 @@
 
 <section>
     <h3 id="theaters">Theater Types</h3>
-    <p>Refers to the setting for the <a href="terms.html#scenario">scenario</a>. This primarily determines the graphics used for the <a href="terms.html#map">map</a>, ambient sounds, etc. See &quot;<a href="map-settings.html#theaters">Theater Types</a>&quot;</p>
+    <p>Refers to the setting for the <a href="terms.html#scenario">scenario</a>. This primarily determines the graphics used for the <a href="terms.html#map">map</a>, ambient sounds, etc.</p>
     <table>
         <thead>
             <tr>
@@ -216,7 +217,7 @@
         <tbody>
             
                 <tr>
-                    <td></td>
+                    <td>-1</td>
                     <td><code>(none)</code></td>
                     <td>No Theater</td>
                 </tr>
@@ -251,7 +252,7 @@
 
 <section>
     <h3 id="sources">Reinforcement Source Types</h3>
-    <p></p>
+    <p>A method of delivering <a href="terms.html#reinforcements">reinforcements</a>.</p>
     <table>
         <thead>
             <tr>
@@ -265,49 +266,49 @@
                 <tr>
                     <td>-1</td>
                     <td><code>(none)</code></td>
-                    <td>No source</td>
+                    <td>No <a href="terms.html#source">source</a></td>
                 </tr>
             
                 <tr>
                     <td>0</td>
                     <td><code>North</code></td>
-                    <td>North edge of <a href="terms.html#map">map</a>. Starting x coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                    <td>North edge of <a href="terms.html#map">map</a>. Starting x coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear. Thus <a href="terms.html#impassable">impassable</a> land can be placed outside the map bounds to constrain the possible starting positions.</td>
                 </tr>
             
                 <tr>
                     <td>1</td>
                     <td><code>East</code></td>
-                    <td>East edge  of <a href="terms.html#map">map</a>. Starting y coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                    <td>East edge  of <a href="terms.html#map">map</a>. Starting y coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear. Thus <a href="terms.html#impassable">impassable</a> land can be placed outside the map bounds to constrain the possible starting positions.</td>
                 </tr>
             
                 <tr>
                     <td>2</td>
                     <td><code>South</code></td>
-                    <td>South edge of <a href="terms.html#map">map</a>. Starting x coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                    <td>South edge of <a href="terms.html#map">map</a>. Starting x coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear. Thus <a href="terms.html#impassable">impassable</a> land can be placed outside the map bounds to constrain the possible starting positions.</td>
                 </tr>
             
                 <tr>
                     <td>3</td>
                     <td><code>West</code></td>
-                    <td>West edge of <a href="terms.html#map">map</a>. Starting y coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear.</td>
+                    <td>West edge of <a href="terms.html#map">map</a>. Starting y coordinate is chosen randomly from those where the <a href="terms.html#cell">cell</a> just outside the bounds of the map, and the cell adjacent to it inside the bounds, are clear. Thus <a href="terms.html#impassable">impassable</a> land can be placed outside the map bounds to constrain the possible starting positions.</td>
                 </tr>
             
                 <tr>
                     <td>4</td>
                     <td><code>Shipping</code></td>
-                    <td>Shipping lane. Not selectable in editor but automatically selected if the reinforcement is a <a href="units.html#boat">gunboat</a>. Boat is put into guard mode and told to sail east to west and back again. Start position is on the east edge, aligned with the northmost row of <a href="terms.html#cell">cells</a> consisting soley of water.</td>
+                    <td>Shipping lane. Not selectable in editor but automatically selected if the <a href="terms.html#reinforcements">reinforcement</a> is a <a href="units.html#boat">gunboat</a>. Boat is put into guard mode and told to sail east to west and back again. Start position is on the east edge, aligned with the northmost row of <a href="terms.html#cell">cells</a> consisting soley of water.</td>
                 </tr>
             
                 <tr>
                     <td>5</td>
                     <td><code>Beach</code></td>
-                    <td>Selects beach to land upon. Not selectable in editor but automatically selected if <a href="terms.html#team">team</a> contains a <a href="units.html#lst">landing hovercraft</a>. <a href="units.html#lst">Lander</a> begins at the south edge of the <a href="terms.html#map">map</a>, just outside the bounds, and is told to head north in a straight line and unload once it reaches land. Starting x coordinate is chosen by finding those where there is a column of sea <a href="terms.html#cell">cells</a> from the starting y coordinate to a clear land cell with two additional clear land cells north of that. The algorithm then narrows this list down to those entries where the x coordinates to the immediate east and west of it are also in the list or, if there are no such entries, it keeps the original list. Finally the entry 3/4 of the way through this list, when ordered west to east, is selected. If <a href="terms.html#theater-type">Theater type</a> is &quot;desert&quot;, the start position is one cell further south.</td>
+                    <td>Selects beach to land upon. Not selectable in editor but automatically selected if <a href="terms.html#team">team</a> contains a landing <a href="units.html#lst">hovercraft</a>. <a href="units.html#lst">Lander</a> begins at the south edge of the <a href="terms.html#map">map</a>, just outside the bounds, and is told to head north in a straight line and unload once it reaches land. Starting x coordinate is chosen by finding those where there is a column of sea <a href="terms.html#cell">cells</a> from the starting y coordinate to a clear land cell with two additional clear land cells north of that. The algorithm then narrows this list down to those entries where the x coordinates to the immediate east and west of it are also in the list or, if there are no such entries, it keeps the original list. Finally the entry 3/4 of the way through this list, when ordered west to east, is selected. If <a href="terms.html#theater-type">Theater type</a> is &quot;desert&quot;, the start position is one cell further south.</td>
                 </tr>
             
                 <tr>
                     <td>6</td>
                     <td><code>Air</code></td>
-                    <td>Dropped by air. Not selectable in editor but selected automatically if <a href="terms.html#team">team</a> contains a <a href="units.html#tran">transport helicopter</a>. If team also contains <a href="terms.html#unit">units</a> to go inside it, transport is not controllable by the player and is told to unload on arrival. If team is just the transport, it moves in and becomes controllable by the player. Landing position is chosen at a random, in-bounds, unoccupied <a href="terms.html#cell">cell</a> up to 6 cells from the <a href="terms.html#reinforcements">reinforcements</a> <a href="terms.html#waypoint">waypoint</a> (#27), prefering closer cells. If the waypoint isn&#x27;t defined, cell currently in the top-left corner of the <a href="terms.html#tactical-view">tactical view</a> is used (presumably for debugging purposes)</td>
+                    <td>Dropped by air. Not selectable in editor but selected automatically if <a href="terms.html#team">team</a> contains a <a href="units.html#tran">transport helicopter</a>. If team also contains <a href="terms.html#unit">units</a> to go inside it, transport is not controllable by the player and is told to unload on arrival. If team is just the transport, it moves in and becomes controllable by the player. Landing position is on the <a href="terms.html#reinforcements">reinforcements</a> <a href="terms.html#waypoint">waypoint</a> (#27) unless this <a href="terms.html#cell">cell</a> is occupied, in which case the game chooses a random, in-bounds, unoccupied cell up to 6 cells from the waypoint, prefering closer cells. If the waypoint isn&#x27;t defined, the cell currently in the top-left corner of the <a href="terms.html#tactical-view">tactical view</a> is used (presumably for debugging purposes). The transport flies in from a random cell along the <a href="terms.html#house">House</a>&#x27;s reinforcements edge (see <a href="map-settings.html">Map Settings</a>), similarly to how &quot;North&quot;, &quot;East&quot;, &quot;South&quot; and &quot;West&quot; reinforcements arrive. Note that even for flying units, cells along the edge that are occupied or contain impassible land will not be selected.</td>
                 </tr>
             
                 <tr>
@@ -340,11 +341,11 @@
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.0
+            - version 1.1
             - by Mark Frimston 
             - based on game version 
-            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
-                2020-06-22 post-launch patch
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
+                2020-09-16 patch
             </a>
         </footer>
     </body>

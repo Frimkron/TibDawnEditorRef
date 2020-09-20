@@ -446,17 +446,17 @@
 <!-- tran -->
 <g id="node33" class="node">
 <title>tran</title>
-<g id="a_node33"><a xlink:href="units.html#tran" xlink:title="Chinook transport helicopter" target="_top">
-<polygon fill="none" stroke="#40d040" points="1065.22,-290.84 880.22,-290.84 880.22,-254.84 1065.22,-254.84 1065.22,-290.84"/>
-<text text-anchor="middle" x="972.72" y="-269.14" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#40d040">Chinook transport helicopter</text>
+<g id="a_node33"><a xlink:href="units.html#tran" xlink:title="CH&#45;47 Chinook Transport Helicopter" target="_top">
+<polygon fill="none" stroke="#40d040" points="1090.22,-290.84 855.22,-290.84 855.22,-254.84 1090.22,-254.84 1090.22,-290.84"/>
+<text text-anchor="middle" x="972.72" y="-269.14" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#40d040">CH&#45;47 Chinook Transport Helicopter</text>
 </a>
 </g>
 </g>
 <!-- hpad&#45;&gt;tran -->
 <g id="edge54" class="edge">
 <title>hpad&#45;&gt;tran</title>
-<path fill="none" stroke="#40d040" d="M811.85,-254.23C830.2,-256.37 850.27,-258.71 869.8,-260.98"/>
-<polygon fill="#40d040" stroke="#40d040" points="869.61,-264.48 879.95,-262.16 870.42,-257.53 869.61,-264.48"/>
+<path fill="none" stroke="#40d040" d="M811.85,-254.23C822.45,-255.47 833.62,-256.77 844.93,-258.08"/>
+<polygon fill="#40d040" stroke="#40d040" points="844.55,-261.56 854.89,-259.24 845.36,-254.61 844.55,-261.56"/>
 </g>
 <!-- orca -->
 <g id="node34" class="node">

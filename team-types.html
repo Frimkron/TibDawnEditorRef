@@ -28,7 +28,7 @@
         </nav>
         <main>
             <h2>Team Types</h2>
-<p>a group of <a href="terms.html#unit">units</a>. <a href="team-types.html">Team types</a> are used to instruct <a href="terms.html#ai">AI</a> what to attack with, what player receives as <a href="terms.html#reinforcements">reinforcements</a>, etc. A <a href="terms.html#team">team</a> has a list of <a href="terms.html#mission">missions</a> which it carries out in order. There is a max limit of 60 teams in the game at once, and a limit of 60 team types.</p>
+<p>A group of <a href="terms.html#unit">units</a>. <a href="team-types.html">Team types</a> are used to instruct the <a href="terms.html#ai">AI</a> what to attack with, what the player receives as <a href="terms.html#reinforcements">reinforcements</a>, etc. The AI creates empty <a href="terms.html#team">teams</a> then constructs and <a href="terms.html#recruit">recruits</a> units to fill them. A team has a list of <a href="terms.html#mission">missions</a> which it carries out in order before disbanding. There is a max limit of 60 teams in the game at once, and a limit of 60 team types.</p>
 <nav>
     <ul>
         <li><a href="#settings">Team Settings</a></li>
@@ -43,7 +43,7 @@
         
     <h4>Auto-Create</h4>
     
-        <p><a href="terms.html#ai">AI</a> will not consider <a href="terms.html#building">building</a> <a href="terms.html#team">teams</a> marked auto-create until the &quot;Auto-create teams&quot; <a href="terms.html#action">action</a> is triggered (see &quot;<a href="triggers.html#actions">Action Types</a>&quot;). Note that the AI will always choose from the other <a href="team-types.html">team types</a> assigned to its <a href="terms.html#house">House</a>. Note also, though, that the AI will not actually produce any <a href="terms.html#unit">units</a> towards those teams until the &quot;Production&quot; <a href="terms.html#trigger-action">trigger action</a> is activated.</p>
+        <p><a href="terms.html#ai">AI</a> will not consider creating <a href="terms.html#team">teams</a> marked auto-create until the &quot;Auto-create teams&quot; <a href="terms.html#action">action</a> is triggered (see &quot;<a href="triggers.html#actions">Action Types</a>&quot;). Note that the AI will always choose from the other <a href="team-types.html">team types</a> assigned to its <a href="terms.html#house">House</a>. Note also, though, that the AI will not actually produce any <a href="terms.html#unit">units</a> towards those teams until the &quot;Production&quot; <a href="terms.html#trigger-action">trigger action</a> is activated.</p>
     
 
     
@@ -57,14 +57,14 @@
         
     <h4>House</h4>
     
-        <p>Which side, GDI/Nod/etc. See <a href="map-settings.html#houses">Houses</a>. The <a href="terms.html#ai">AI</a> will only consider <a href="terms.html#building">building</a> <a href="terms.html#team">teams</a> for its own <a href="terms.html#house">house</a>.</p>
+        <p>Which side, GDI/Nod/etc. See <a href="map-settings.html#houses">Houses</a>. The <a href="terms.html#ai">AI</a> will only consider creating <a href="terms.html#team">teams</a> for its own <a href="terms.html#house">house</a>.</p>
     
 
     
         
     <h4>Init Num</h4>
     
-        <p>Initial number of this type of <a href="terms.html#team">team</a></p>
+        <p>Initial quantity of <a href="terms.html#team">teams</a> of this type at the start of the <a href="terms.html#scenario">scenario</a>.</p>
     
 
     
@@ -78,7 +78,7 @@
         
     <h4>Max Allowed</h4>
     
-        <p>Max number of this <a href="terms.html#team">team</a> type the <a href="terms.html#house">house</a> will allow at one time. Note there is also a limit of 60 on the total number of teams across all <a href="map-settings.html#houses">houses</a>.</p>
+        <p>If a computer-controlled <a href="terms.html#house">house</a> already owns this many, or more, <a href="terms.html#team">teams</a> of this team type, it will not consider creating any more of them. This max is ignored when a team is created by other means such as by the &quot;Create Team&quot; or &quot;<a href="terms.html#reinforcements">Reinforce</a>&quot; <a href="terms.html#trigger-action">trigger actions</a>. Thus setting this max to zero will prevent the <a href="terms.html#ai">AI</a> from creating this team type while still allowing it to be used for <a href="terms.html#reinforcements">reinforcements</a> etc. Note though that there is a hard limit of 60 on the total number of teams across all <a href="map-settings.html#houses">houses</a>.</p>
     
 
     
@@ -113,21 +113,21 @@
         
     <h4>Prebuilt</h4>
     
-        <p><a href="terms.html#ai">AI</a> will try to build the <a href="terms.html#unit">units</a> required to make one instance of this <a href="terms.html#team">team</a> type even if no such team is active.</p>
+        <p>The <a href="terms.html#ai">AI</a> will try to build the <a href="terms.html#unit">units</a> required to make one instance of this <a href="terms.html#team">team</a> type even if no such team is active.</p>
     
 
     
         
     <h4>Priority</h4>
     
-        <p>Recruitment priority (0-15). <a href="terms.html#ai">AI</a> favours <a href="terms.html#building">building</a> <a href="team-types.html">team types</a> with higher priority value. If AI does not currently own a <a href="terms.html#unit">unit</a> type required for a <a href="terms.html#team">team</a>, it halves that team type&#x27;s priority.</p>
+        <p><a href="terms.html#recruit">Recruitment</a> priority (0-15). The <a href="terms.html#ai">AI</a> favours <a href="terms.html#structure">building</a> <a href="team-types.html">team types</a> with a higher priority value. If the AI does not own any of the <a href="units.html">unit types</a> required for a <a href="terms.html#team">team</a> type, it only considers the type to be half of its actual priority value.</p>
     
 
     
         
     <h4>Reinforcable</h4>
     
-        <p>If this <a href="terms.html#team">team</a> drops below 1/3 its desired number of <a href="terms.html#unit">units</a>, it will recruit new members</p>
+        <p>If this <a href="terms.html#team">team</a> drops below 1/3 of its desired number of <a href="terms.html#unit">units</a>, the <a href="terms.html#ai">AI</a> will <a href="terms.html#recruit">recruit</a> new members to replace the old ones. Note that this property does not affect the AI&#x27;s ability to recruit the team&#x27;s initial members.</p>
     
 
     
@@ -170,7 +170,7 @@
 
 <section>
     <h3 id="missions">Team Mission Types</h3>
-    a <a href="terms.html#unit">unit</a>/<a href="terms.html#structure">structure</a> behaviour, for <a href="terms.html#ai">AI</a> scripting. There are two categories of <a href="terms.html#mission">missions</a>, one for individual <a href="terms.html#object">object</a> behaviours (see &quot;<a href="object-settings.html#missions">Unit Mission Types</a>&quot;) and one for <a href="terms.html#team">team</a> behaviours (see &quot;<a href="team-types.html#missions">Team Mission Types</a>&quot;). The meaning of certain unit missions varies depending on the object using it. For example the &quot;Unload&quot; unit mission is used when an <a href="units.html#apc">APC</a> delivers what it is carrying, but also when an <a href="units.html#mcv">MCV</a> unpacks, or when a <a href="structures.html#weap">weapons factory</a> produces a unit. The term &quot;Mission&quot; is also used loosely to refer to a <a href="terms.html#scenario">Scenario</a>.
+    <a href="terms.html#mission">Missions</a> given to a whole <a href="terms.html#team">team</a> of <a href="terms.html#unit">units</a>, coordinating their behaviour. When a team reaches the end of its mission list, it is disbanded. However the &quot;Loop&quot; mission type can be used to create a looped mission list.
     <table>
         <thead>
             <tr>
@@ -325,11 +325,11 @@
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.0
+            - version 1.1
             - by Mark Frimston 
             - based on game version 
-            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
-                2020-06-22 post-launch patch
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
+                2020-09-16 patch
             </a>
         </footer>
     </body>

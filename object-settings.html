@@ -28,7 +28,7 @@
         </nav>
         <main>
             <h2>Object Settings</h2>
-<p>A thing rendered on the <a href="terms.html#map">map</a>. Encompasses all <a href="terms.html#overlay">overlays</a>, <a href="terms.html#bullet">bullets</a>, <a href="terms.html#building">buildings</a>, <a href="terms.html#unit">units</a>, <a href="terms.html#infantry">infantry</a>, <a href="terms.html#smudge">smudges</a> and <a href="terms.html#terrain">terrain</a>.</p>
+<p>A thing rendered on the <a href="terms.html#map">map</a>. Encompasses all <a href="terms.html#overlay">overlays</a>, <a href="terms.html#bullet">bullets</a>, <a href="terms.html#structure">buildings</a>, <a href="terms.html#unit">units</a>, <a href="terms.html#infantry">infantry</a>, <a href="terms.html#smudge">smudges</a> and <a href="terms.html#terrain">terrain</a>.</p>
 <ul>
     <li><a href="#structures">Structure Settings</a></li>
     <li><a href="#units">Unit Settings</a></li>
@@ -40,7 +40,7 @@
 
 <section>
     <h3 id="structures">Structure Settings</h3>
-    <p>an immobile <a href="terms.html#techno">techno</a> <a href="terms.html#object">object</a>, some of which produce <a href="terms.html#unit">units</a> or yield other benefits. A collection of <a href="terms.html#structure">structures</a> make up a <a href="terms.html#base">base</a>. There can be no more than 500 structures in the game at once. See &quot;<a href="structures.html">Structure Types</a>&quot;</p>
+    <p>An immobile <a href="terms.html#techno">techno</a> <a href="terms.html#object">object</a>, some of which produce <a href="terms.html#unit">units</a> or yield other benefits. A collection of <a href="terms.html#structure">structures</a> make up a <a href="terms.html#base">base</a>. There can be no more than 500 structures in the game at once.</p>
     
         
     <h4>Base / Base Priority</h4>
@@ -66,7 +66,7 @@
         
     <h4>Prebuilt</h4>
     
-        <p>if checked, the <a href="terms.html#structure">structure</a> will already be built at the start of the <a href="terms.html#scenario">scenario</a>. If not checked, and <a href="terms.html#house">house</a> is <a href="terms.html#ai">AI</a> controlled, the structure&#x27;s position indicates where the AI should build it once it has enough <a href="terms.html#credits">credits</a> to do so. The AI can build here even if not adjacent to another one of their <a href="terms.html#building">buildings</a>. Note that only the type and position of the structure are used; if a <a href="terms.html#trigger">trigger</a> is attached, for example, this will not be attached to the new structure when constructed. Note also that the AI will not construct anything until the &quot;Production&quot; <a href="terms.html#trigger-action">trigger action</a> has been activated. See &quot;<a href="triggers.html#actions">Action Types</a>&quot;</p>
+        <p>if checked, the <a href="terms.html#structure">structure</a> will already be built at the start of the <a href="terms.html#scenario">scenario</a>. If not checked, and <a href="terms.html#house">house</a> is <a href="terms.html#ai">AI</a> controlled, the structure&#x27;s position indicates where the AI should build it once it has enough <a href="terms.html#credits">credits</a> to do so. The AI can build here even if not adjacent to another one of their <a href="terms.html#structure">buildings</a>. Note that only the type and position of the structure are used; if a <a href="terms.html#trigger">trigger</a> is attached, for example, this will not be attached to the new structure when constructed. Note also that the AI will not construct anything until the &quot;Production&quot; <a href="terms.html#trigger-action">trigger action</a> has been activated. See &quot;<a href="triggers.html#actions">Action Types</a>&quot;</p>
     
 
     
@@ -88,7 +88,7 @@
 
 <section>
     <h3 id="units">Unit Settings</h3>
-    <p>Strictly speaking this refers to vehicles, but the term is commonly used more loosely to refer to <a href="terms.html#infantry">infantry</a>, <a href="terms.html#civilian">civilians</a> and other mobile <a href="terms.html#object">objects</a> as well. Each <a href="terms.html#unit">unit</a> type has a <a href="terms.html#weapon">weapon</a> type which determines how that unit fights. There can be no more than 500 units in the game at once. See &quot;<a href="units.html">Unit Types</a>&quot;, &quot;Weapon&quot; and &quot;<a href="units.html#weapons">Weapon Types</a>&quot;</p>
+    <p>Strictly speaking this refers to vehicles, but the term is commonly used more loosely to refer to <a href="terms.html#infantry">infantry</a>, <a href="terms.html#civilian">civilians</a> and other mobile <a href="terms.html#object">objects</a> as well. Each <a href="terms.html#unit">unit</a> type has a <a href="terms.html#weapon">weapon</a> type which determines how that unit fights. There can be no more than 500 units in the game at once.</p>
     
         
     <h4>Direction</h4>
@@ -129,7 +129,7 @@
 
 <section>
     <h3 id="terrain">Terrain Settings</h3>
-    <p>scenery <a href="terms.html#object">objects</a> that sit on top of the <a href="terms.html#map">map</a> tiles</p>
+    <p>Scenery <a href="terms.html#object">objects</a> that sit on top of the <a href="terms.html#map">map</a> tiles</p>
     
         
     <h4>Trigger</h4>
@@ -141,7 +141,7 @@
 
 <section>
     <h3 id="missions">Unit Mission Types</h3>
-    <p></p>
+    <p><a href="terms.html#mission">Missions</a> assigned to individual <a href="terms.html#unit">units</a>.</p>
     <figure>
         <object type="image/svg+xml" data="unit-missions.svg" class="image"></object>
         <figcaption>
@@ -167,7 +167,7 @@
                 <tr id="mission-sleep">
                     <td>0</th>
                     <td>Sleep</td>
-                    <td>do absolutely nothing, even if attacked. Not recruited into <a href="terms.html#team">teams</a> or rescue <a href="terms.html#mission">missions</a>.</td>
+                    <td>do absolutely nothing, even if attacked. Not <a href="terms.html#recruit">recruited</a> into <a href="terms.html#team">teams</a> or <a href="terms.html#rescue-mission">rescue missions</a>.</td>
                 </tr>
             
                 <tr id="mission-attack">
@@ -197,7 +197,7 @@
                 <tr id="mission-sticky">
                     <td>5</th>
                     <td>Sticky</td>
-                    <td>stay still, reacting only if attacked, at which point the <a href="terms.html#unit">unit</a> will switch to the &quot;Guard&quot; <a href="terms.html#mission">mission</a>. Not recruited into <a href="terms.html#team">teams</a> or rescue missions.</td>
+                    <td>stay still, reacting only if attacked, at which point the <a href="terms.html#unit">unit</a> will switch to the &quot;Guard&quot; <a href="terms.html#mission">mission</a>. Not <a href="terms.html#recruit">recruited</a> into <a href="terms.html#team">teams</a> or <a href="terms.html#rescue-mission">rescue missions</a>.</td>
                 </tr>
             
                 <tr id="mission-enter">
@@ -215,13 +215,13 @@
                 <tr id="mission-harvest">
                     <td>8</th>
                     <td>Harvest</td>
-                    <td>hunt for and collect tiberium, or process tiberium. Used by <a href="units.html#harv">harvesters</a> and refineries. Not recruited into <a href="terms.html#team">teams</a>. Once the harvester is full, or cannot find any more tiberium, it identifies a <a href="structures.html#proc">refinery</a> to return to and switches to the &quot;Enter&quot; <a href="terms.html#mission">mission</a>. If the harvester can&#x27;t find anything to do, it switches to &quot;Guard&quot;. When a harvester is ready to un-dock from a refinery, the refinery also reverts back to &quot;Guard&quot;.</td>
+                    <td>hunt for and collect tiberium, or process tiberium. Used by <a href="units.html#harv">harvesters</a> and refineries. Not <a href="terms.html#recruit">recruited</a> into <a href="terms.html#team">teams</a>. Once the harvester is full, or cannot find any more tiberium, it identifies a <a href="structures.html#proc">refinery</a> to return to and switches to the &quot;Enter&quot; <a href="terms.html#mission">mission</a>. If the harvester can&#x27;t find anything to do, it switches to &quot;Guard&quot;. When a harvester is ready to un-dock from a refinery, the refinery also reverts back to &quot;Guard&quot;.</td>
                 </tr>
             
                 <tr id="mission-guard-area">
                     <td>9</th>
                     <td>Guard area</td>
-                    <td>active guard of area. <a href="terms.html#unit">Unit</a> will move to attack enemies within 2x their <a href="terms.html#weapon">weapons</a> range, prioritising the one that is the greatest <a href="terms.html#threat">threat</a>, but won&#x27;t stray further than 1x their weapons range from their starting spot, and will return to this spot again afterwards. If unit is computer-controlled, and attacked before it has identified a target, it switches to &quot;Hunt&quot; <a href="terms.html#mission">mission</a> and targets the attacker. Not recruited into <a href="terms.html#team">teams</a>. A <a href="units.html#harv">harvester</a> with this mission will switch to &quot;Harvest&quot; intead. An <a href="units.html#orca">orca</a> or <a href="units.html#heli">apache</a> with this mission will switch to &quot;Attack&quot; if they have a valid target.</td>
+                    <td>active guard of area. <a href="terms.html#unit">Unit</a> will move to attack enemies within 2x their <a href="terms.html#weapon">weapons</a> range, prioritising the one that is the greatest <a href="terms.html#threat">threat</a>, but won&#x27;t stray further than 1x their weapons range from their starting spot, and will return to this spot again afterwards. If unit is computer-controlled, and attacked before it has identified a target, it switches to &quot;Hunt&quot; <a href="terms.html#mission">mission</a> and targets the attacker. Not <a href="terms.html#recruit">recruited</a> into <a href="terms.html#team">teams</a>. A <a href="units.html#harv">harvester</a> with this mission will switch to &quot;Harvest&quot; intead. An <a href="units.html#orca">orca</a> or <a href="units.html#heli">apache</a> with this mission will switch to &quot;Attack&quot; if they have a valid target.</td>
                 </tr>
             
                 <tr id="mission-return">
@@ -245,7 +245,7 @@
                 <tr id="mission-hunt">
                     <td>13</th>
                     <td>Hunt</td>
-                    <td>The <a href="terms.html#unit">unit</a> is instructed to target its greatest <a href="terms.html#threat">threat</a> anywhere on the <a href="terms.html#map">map</a> and move to engage it. If the target becomes invalid it will select a new one. Not recruited into <a href="terms.html#team">teams</a>. An <a href="units.html#mcv">MCV</a> with this <a href="terms.html#mission">mission</a> will instead find a suitable place to deploy. A <a href="units.html#boat">gunboat</a> will travel horizontally across the map targeting the greatest threat within 2x <a href="terms.html#weapon">weapons</a> range. An <a href="units.html#a10">A10</a> will bomb its target then switch to &quot;Retreat&quot;. A <a href="units.html#c17">cargo plane</a> will switch straight to &quot;Retreat&quot;. An <a href="units.html#orca">orca</a> or <a href="units.html#heli">apache</a> will switch to &quot;Attack&quot;.</td>
+                    <td>The <a href="terms.html#unit">unit</a> is instructed to target its greatest <a href="terms.html#threat">threat</a> anywhere on the <a href="terms.html#map">map</a> and move to engage it. If the target becomes invalid it will select a new one. Not <a href="terms.html#recruit">recruited</a> into <a href="terms.html#team">teams</a>. An <a href="units.html#mcv">MCV</a> with this <a href="terms.html#mission">mission</a> will instead find a suitable place to deploy. A <a href="units.html#boat">gunboat</a> will travel horizontally across the map targeting the greatest threat within 2x <a href="terms.html#weapon">weapons</a> range. An <a href="units.html#a10">A10</a> will bomb its target then switch to &quot;Retreat&quot;. A <a href="units.html#c17">cargo plane</a> will switch straight to &quot;Retreat&quot;. An <a href="units.html#orca">orca</a> or <a href="units.html#heli">apache</a> will switch to &quot;Attack&quot;.</td>
                 </tr>
             
                 <tr id="mission-timed-hunt">
@@ -263,7 +263,7 @@
                 <tr id="mission-sabotage">
                     <td>16</th>
                     <td>Sabotage</td>
-                    <td>used by the <a href="units.html#mbo">commando</a> <a href="terms.html#unit">unit</a> to C4 a <a href="terms.html#building">building</a>. After attempting to sabotage the target building, the unit reverts to the &quot;Guard&quot; <a href="terms.html#mission">mission</a>.</td>
+                    <td>used by the <a href="units.html#mbo">commando</a> <a href="terms.html#unit">unit</a> to C4 a <a href="terms.html#structure">building</a>. After attempting to sabotage the target building, the unit reverts to the &quot;Guard&quot; <a href="terms.html#mission">mission</a>.</td>
                 </tr>
             
                 <tr id="mission-construction">
@@ -287,13 +287,13 @@
                 <tr id="mission-rescue">
                     <td>20</th>
                     <td>Rescue</td>
-                    <td>scramble to defend a <a href="terms.html#base">base</a> or <a href="units.html#harv">harvester</a>. If a <a href="terms.html#structure">structure</a> or harvester belonging to the <a href="terms.html#ai">AI</a> is attacked, the AI recruits <a href="terms.html#unit">units</a> to go to the rescue, assigning them the &quot;Rescue&quot; <a href="terms.html#mission">mission</a> and targetting the attacker. Units with this mission behave the same as with the &quot;Hunt&quot; mission, continuing to select a new target if the existing one becomes invalid.</td>
+                    <td>scramble to defend a <a href="terms.html#base">base</a> or <a href="units.html#harv">harvester</a>. If a <a href="terms.html#structure">structure</a> or harvester belonging to the <a href="terms.html#ai">AI</a> is attacked, the AI <a href="terms.html#recruit">recruits</a> <a href="terms.html#unit">units</a> to go to the rescue, assigning them the &quot;Rescue&quot; <a href="terms.html#mission">mission</a> and targetting the attacker. Units with this mission behave the same as with the &quot;Hunt&quot; mission, continuing to select a new target if the existing one becomes invalid.</td>
                 </tr>
             
                 <tr id="mission-missile">
                     <td>21</th>
                     <td>Missile</td>
-                    <td>used for <a href="structures.html#tmpl">temple of nod</a> <a href="terms.html#nuke">nuke</a> launch sequence. The <a href="structures.html#tmpl">temple</a> returns to &quot;Guard&quot; <a href="terms.html#mission">mission</a> once finished. Does nothing for other <a href="terms.html#object">objects</a>.</td>
+                    <td>used for <a href="structures.html#tmpl">temple of nod</a> <a href="terms.html#nuclear-missile">nuke</a> launch sequence. The <a href="structures.html#tmpl">temple</a> returns to &quot;Guard&quot; <a href="terms.html#mission">mission</a> once finished. Does nothing for other <a href="terms.html#object">objects</a>.</td>
                 </tr>
             
         </tbody>
@@ -302,11 +302,11 @@
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.0
+            - version 1.1
             - by Mark Frimston 
             - based on game version 
-            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
-                2020-06-22 post-launch patch
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
+                2020-09-16 patch
             </a>
         </footer>
     </body>

@@ -28,7 +28,7 @@
         </nav>
         <main>
             <h2>Waypoints</h2>
-<p>Used for marking special points on the <a href="terms.html#map">map</a>, to be referenced by scripting. A <a href="terms.html#scenario">scenario</a> can have up to 27 <a href="waypoints.html">waypoints</a> defined, each attached to a <a href="terms.html#cell">cell</a> on the map. See &quot;Waypoints&quot;</p>
+<p>Used for marking special points on the <a href="terms.html#map">map</a>, to be referenced by scripting. A <a href="terms.html#scenario">scenario</a> can have up to 30 <a href="waypoints.html">waypoints</a> defined, each attached to a <a href="terms.html#cell">cell</a> on the map.</p>
 <table>
     <thead>
         <tr>
@@ -40,27 +40,42 @@
         
             <tr>
                 <td>P0-5</td>
-                <td>these <a href="waypoints.html">waypoints</a> are used as the possible player start positions in <a href="terms.html#multiplayer">multiplayer</a></td>
+                <td>These <a href="waypoints.html">waypoints</a> are used as the possible player start positions in <a href="terms.html#multiplayer">multiplayer</a>. In a <a href="terms.html#singleplayer">singleplayer</a> campaign they can be used as general-purpose waypoints.</td>
             </tr>
         
             <tr>
-                <td>6-24</td>
-                <td>general-purpose <a href="waypoints.html">waypoints</a></td>
+                <td>P6-7</td>
+                <td>In <a href="terms.html#singleplayer">singleplayer</a> these can be used as general-purpose <a href="waypoints.html">waypoints</a>.</td>
             </tr>
         
             <tr>
-                <td>Flare</td>
-                <td>marks the location at which a drop zone flare can be created. See &quot;DZ at Z&quot; <a href="terms.html#trigger-action">trigger action</a> type</td>
+                <td>8-24</td>
+                <td>General-purpose <a href="waypoints.html">waypoints</a></td>
+            </tr>
+        
+            <tr>
+                <td>25</td>
+                <td>The &quot;Flare&quot; <a href="terms.html#waypoint">waypoint</a>. Marks the location at which a drop zone flare can be created. See &quot;DZ at Z&quot; <a href="terms.html#trigger-action">trigger action</a> type. At the time of writing, the <a href="terms.html#map-editor">map editor</a> erroneously displays &quot;Flare&quot; for waypoint #27.</td>
+            </tr>
+        
+            <tr>
+                <td>26</td>
+                <td>The &quot;Home&quot; <a href="terms.html#waypoint">waypoint</a>. Marks where the camera will begin at the start of a <a href="terms.html#singleplayer">singleplayer</a> <a href="terms.html#scenario">scenario</a>. At the time of writing, the <a href="terms.html#map-editor">map editor</a> erroneously displays &quot;Home&quot; for waypoint #28.</td>
+            </tr>
+        
+            <tr>
+                <td>27/Flare</td>
+                <td>The &quot;Reinf&quot; <a href="terms.html#waypoint">waypoint</a>. Marks where <a href="terms.html#reinforcements">reinforcements</a> will arrive by air. See &quot;<a href="terms.html#reinforcements">Reinforce</a>&quot; <a href="terms.html#trigger-action">trigger action</a> type and &quot;Air&quot; <a href="terms.html#source">source</a> type. At the time of writing, the <a href="terms.html#map-editor">map editor</a> erroneously displays &quot;Reinf&quot; for waypoint #29 and &quot;Flare&quot; for this waypoint.</td>
             </tr>
         
             <tr>
                 <td>Home</td>
-                <td>marks where the camera will begin at the start of a <a href="terms.html#singleplayer">singleplayer</a> <a href="terms.html#scenario">scenario</a></td>
+                <td>At the time of writing, the <a href="terms.html#map-editor">map editor</a> erroneously displays &quot;Home&quot; for this <a href="terms.html#waypoint">waypoint</a>, despite the &quot;Home&quot; waypoint in fact being #26.</td>
             </tr>
         
             <tr>
                 <td>Reinf</td>
-                <td>marks where <a href="terms.html#reinforcements">reinforcements</a> will arrive by air. See &quot;Reinforce&quot; <a href="terms.html#trigger-action">trigger action</a> type and &quot;Air&quot; source type.</td>
+                <td>At the time of writing, the <a href="terms.html#map-editor">map editor</a> erroneously displays &quot;Reinf&quot; for this <a href="terms.html#waypoint">waypoint</a>, despite the &quot;Reinf&quot; waypoint in fact being #27.</td>
             </tr>
         
     </tbody>
@@ -68,11 +83,11 @@
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.0
+            - version 1.1
             - by Mark Frimston 
             - based on game version 
-            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fc5cd5a7751e61e6805c3a6834f4ac279e22ce92">
-                2020-06-22 post-launch patch
+            <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
+                2020-09-16 patch
             </a>
         </footer>
     </body>
