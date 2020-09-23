@@ -33,6 +33,7 @@
     <ul>
         <li><a href="#settings">Team Settings</a></li>
         <li><a href="#missions">Team Mission Types</a></li>
+        <li><a href="#sp-production-ai">Singleplayer Production AI</a></li>
     </ul>
 </nav>
 
@@ -78,7 +79,7 @@
         
     <h4>Max Allowed</h4>
     
-        <p>If a computer-controlled <a href="terms.html#house">house</a> already owns this many, or more, <a href="terms.html#team">teams</a> of this team type, it will not consider creating any more of them. This max is ignored when a team is created by other means such as by the &quot;Create Team&quot; or &quot;<a href="terms.html#reinforcements">Reinforce</a>&quot; <a href="terms.html#trigger-action">trigger actions</a>. Thus setting this max to zero will prevent the <a href="terms.html#ai">AI</a> from creating this team type while still allowing it to be used for <a href="terms.html#reinforcements">reinforcements</a> etc. Note though that there is a hard limit of 60 on the total number of teams across all <a href="map-settings.html#houses">houses</a>.</p>
+        <p>If a computer-controlled <a href="terms.html#house">house</a> already owns this many, or more, <a href="terms.html#team">teams</a> of this team type, it will not consider creating any more of them. This max is ignored when a team is created by other means such as by the &quot;Create Team&quot; or &quot;<a href="terms.html#reinforcements">Reinforce</a>&quot; <a href="terms.html#trigger-action">trigger actions</a>. Thus setting this max to zero will prevent the <a href="terms.html#ai">AI</a> from creating this team type while still allowing it to be used for <a href="terms.html#reinforcements">reinforcements</a> etc. Note though that the AI will still construct <a href="terms.html#unit">units</a> to contribute to such a team (with a certain level of redundancy), once created. Note also that there is a hard limit of 60 on the total number of teams across all <a href="map-settings.html#houses">houses</a>.</p>
     
 
     
@@ -322,10 +323,20 @@
         </tbody>
     </table>
 </section>
+
+<section>
+    <h3 id="sp-production-ai">Singleplayer Production <a href="terms.html#ai">AI</a></h3>
+    <figure>
+        <object type="image/svg+xml" data="production.svg" class="image"></object>
+        <figcaption>
+            <a href="production.svg">Simplified flow diagram showing how AI assembles teams in singleplayer</a>
+        </figcaption>
+    </figure>
+</section>
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.1
+            - version 1.2
             - by Mark Frimston 
             - based on game version 
             <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
