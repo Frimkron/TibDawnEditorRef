@@ -34,6 +34,7 @@
         <li><a href="#houses">Houses</a></li>
         <li><a href="#theaters">Theater Types</a></li>
         <li><a href="#sources">Reinforcement Source Types</a></li>
+        <li><a href="#cutscenes">Cutscenes</a></li>
     </ul>
 </nav>
 
@@ -46,9 +47,23 @@
         
             
                 
+        <h5>Action</h5>
+        
+            <p><a href="terms.html#cutscene">Cutscene</a> to show immediately before the <a href="terms.html#scenario">scenario</a> begins, after the briefing. See &quot;<a href="map-settings.html#cutscenes">Cutscenes</a>&quot;</p>
+        
+    
+            
+                
         <h5>Author</h5>
         
             <p>name of <a href="terms.html#scenario">scenario</a>&#x27;s author</p>
+        
+    
+            
+                
+        <h5>Brief</h5>
+        
+            <p><a href="terms.html#cutscene">Cutscene</a> to show as the <a href="terms.html#scenario">scenario</a> briefing. See &quot;<a href="map-settings.html#cutscenes">Cutscenes</a>&quot;</p>
         
     
             
@@ -63,6 +78,20 @@
         <h5>Carryover</h5>
         
             <p>Not used. Old feature where <a href="terms.html#credits">credits</a> were carried over from the previous <a href="terms.html#scenario">scenario</a>. (fixed cap)</p>
+        
+    
+            
+                
+        <h5>Intro</h5>
+        
+            <p><a href="terms.html#cutscene">Cutscene</a> to show to introduce the <a href="terms.html#scenario">scenario</a>, before the briefing. See &quot;<a href="map-settings.html#cutscenes">Cutscenes</a>&quot;</p>
+        
+    
+            
+                
+        <h5>Lose</h5>
+        
+            <p><a href="terms.html#cutscene">Cutscene</a> to show when the player loses the <a href="terms.html#scenario">scenario</a>. See &quot;<a href="map-settings.html#cutscenes">Cutscenes</a>&quot;</p>
         
     
             
@@ -94,13 +123,20 @@
         
     
             
+                
+        <h5>Win</h5>
+        
+            <p><a href="terms.html#cutscene">Cutscene</a> to show when the player wins the <a href="terms.html#scenario">scenario</a>. See &quot;<a href="map-settings.html#cutscenes">Cutscenes</a>&quot;</p>
+        
+    
+            
         
     
     
         
         <h4>Briefing</h4>
         
-            <p>the description of the <a href="terms.html#scenario">scenario</a>&#x27;s objective. Displayed before the scenario begins, to inform the player of what they must do in order to win.</p>
+            <p>The description of the <a href="terms.html#scenario">scenario</a>&#x27;s objective. Displayed in the scenario selection menu.</p>
         
     
     
@@ -308,7 +344,7 @@
                 <tr>
                     <td>6</td>
                     <td><code>Air</code></td>
-                    <td>Dropped by air. Not selectable in editor but selected automatically if <a href="terms.html#team">team</a> contains a <a href="units.html#tran">transport helicopter</a>. If team also contains <a href="terms.html#unit">units</a> to go inside it, transport is not controllable by the player and is told to unload on arrival. If team is just the transport, it moves in and becomes controllable by the player. Landing position is on the <a href="terms.html#reinforcements">reinforcements</a> <a href="terms.html#waypoint">waypoint</a> (#27) unless this <a href="terms.html#cell">cell</a> is occupied, in which case the game chooses a random, in-bounds, unoccupied cell up to 6 cells from the waypoint, prefering closer cells. If the waypoint isn&#x27;t defined, the cell currently in the top-left corner of the <a href="terms.html#tactical-view">tactical view</a> is used (presumably for debugging purposes). The transport flies in from a random cell along the <a href="terms.html#house">House</a>&#x27;s reinforcements edge (see <a href="map-settings.html">Map Settings</a>), similarly to how &quot;North&quot;, &quot;East&quot;, &quot;South&quot; and &quot;West&quot; reinforcements arrive. Note that even for flying units, cells along the edge that are occupied or contain impassible land will not be selected.</td>
+                    <td>Dropped by air. Not selectable in editor but selected automatically if <a href="terms.html#team">team</a> contains a <a href="units.html#tran">transport helicopter</a>. If team also contains <a href="terms.html#unit">units</a> to go inside it, transport is not controllable by the player and is told to unload on arrival. If team is just the transport, it moves in and becomes controllable by the player. Landing position is on the <a href="terms.html#reinforcements">reinforcements</a> <a href="terms.html#waypoint">waypoint</a> (#27) unless this <a href="terms.html#cell">cell</a> is occupied, in which case the game chooses a random, in-bounds, unoccupied cell up to 6 cells from the waypoint, prefering closer cells. If the waypoint isn&#x27;t defined, the cell currently in the top-left corner of the <a href="terms.html#tactical-view">tactical view</a> is used (presumably for debugging purposes). The transport flies in from a random cell along the <a href="terms.html#house">House</a>&#x27;s reinforcements edge (see <a href="map-settings.html">Map Settings</a>), similarly to how &quot;North&quot;, &quot;East&quot;, &quot;South&quot; and &quot;West&quot; reinforcements arrive. Note that even for flying units, cells along the edge that are occupied or contain impassible land will not be selected. Also note that if the team is given a <a href="terms.html#mission">mission</a> list, this will override its default destination.</td>
                 </tr>
             
                 <tr>
@@ -338,15 +374,510 @@
         </tbody>
     </table>
 </section>
+
+<section>
+    <h3 id="cutscenes">Cutscenes</h3>
+    <p>Video shown before or after a <a href="terms.html#scenario">scenario</a>.</p>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td><code>x</code></td>
+                    <td>No video</td>
+                </tr>
+            
+                <tr>
+                    <td><code>AFRICA-01..11</code></td>
+                    <td>Nod campaign <a href="terms.html#map">map</a> videos</td>
+                </tr>
+            
+                <tr>
+                    <td><code>AIRSTRK</code></td>
+                    <td>Two GDI soliders in a <a href="units.html#jeep">Humm-Vee</a> view a Nod <a href="terms.html#base">base</a> in a forest through their binoculars, then aircraft fly overhead towards the base.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>AKIRA</code></td>
+                    <td>A <a href="terms.html#base">base</a> under attack, from the perspective of some binoculars, then we see the soldier holding them in a <a href="structures.html#gtwr">guard tower</a> before the <a href="terms.html#ion-cannon">ion cannon</a> beam destroys him and the rest of the base. Cut to the satellite in orbit.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BANNER</code></td>
+                    <td>A GDI <a href="units.html#apc">APC</a> drives up the steps of an important-looking <a href="terms.html#structure">building</a>, a soldier gets out and a large GDI banner is unfurled over the entrance.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BANR_NOD</code></td>
+                    <td>A Nod <a href="units.html#apc">APC</a> drives up the steps of an important-looking <a href="terms.html#structure">building</a>, a soldier gets out and a large Nod banner is unfurled over the entrance.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BCANYON</code></td>
+                    <td>An <a href="units.html#orca">Orca</a> aircraft flies through a winding canyon, dodging incoming fire before launching missiles at a small air <a href="terms.html#base">base</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BKGROUND</code></td>
+                    <td>EVA explains to the player who GDI and Nod are, and what tiberium is.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BLACKOUT</code></td>
+                    <td>Night time, various shots of the <a href="terms.html#base">base</a> surrounding the <a href="structures.html#tmpl">Temple of Nod</a> being powered down before an ending shot of the Nod flag.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BOMBAWAY</code></td>
+                    <td>Three <a href="units.html#a10">Warthog</a> aircraft flying in formation, pilot looks down at flashing target on computer screen then aircraft drop bombs on a Nod <a href="terms.html#base">base</a> in a forest.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BOMBFLEE</code></td>
+                    <td>A solider is at a computer terminal in a bunker viewing the battle happening outside, before the lights flash red, he scrambles to leave, and the bunker explodes.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BOSNIA-00</code></td>
+                    <td>GDI campaign <a href="terms.html#map">map</a> zooming in on Bosnia for the final <a href="terms.html#scenario">scenario</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BURDET1</code></td>
+                    <td>News reporter Greg Burdet tells the viewer that GDI destroyed a <a href="terms.html#civilian">civilian</a> hamlet, it is revealed to be a fake report shot in a studio where kane is seen talking about the plan before shooting the still-rolling camera.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>BURDET2</code></td>
+                    <td>News reporter Greg Burdet tells the viewer that GDI destroyed an orphanage.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>CC2TEASE</code></td>
+                    <td>Teaser trailer for C&amp;C Tiberian Sun - footage of a prototype GDI Wolverine mech <a href="terms.html#unit">unit</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>CONSYARD</code></td>
+                    <td>A GDI <a href="units.html#mcv">mobile construction yard</a> deploys and <a href="units.html#e7">engineers</a> carry equipment inside.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>DESFLEES</code></td>
+                    <td>GDI soldiers are fleeing across the desert as tank shells explode around them, then the three Nod <a href="units.html#ltnk">light tanks</a> persuing them roll into view.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>DESKILL</code></td>
+                    <td>A Nod soldier is sneaking by a rock in the desert, then a GDI soldier appears from behind another rock and shoots him.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>DESOLAT</code></td>
+                    <td>Shot of an abandoned <a href="terms.html#civilian">civilian</a> dwelling, then camera moves outside to tiberium growing in a graveyard, having mutated the trees.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>DESSWEEP</code></td>
+                    <td><a href="units.html#bike">Nod bikes</a>, tanks and buggies pass by in the desert then speed down a hill towards a village.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>DINO</code></td>
+                    <td>A <a href="units.html#lst">hovercraft</a> moves across the water in a jungle where there are dinosaurs, and one roars.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>EARTH_A-00</code></td>
+                    <td>The campaign <a href="terms.html#map">map</a> opens on the globe and zooms in on Africa for the Nod campaign.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>EARTH_E-00</code></td>
+                    <td>The campaign <a href="terms.html#map">map</a> opens on the globe and zooms in on Europe for the GDI campaign.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>EUROPE-01..14</code></td>
+                    <td>GDI campaign <a href="terms.html#map">map</a> videos</td>
+                </tr>
+            
+                <tr>
+                    <td><code>FACTIONSELECT</code></td>
+                    <td>Very short animation of TV static which is looped in the background when the player is choosing whether to play the GDI or Nod campaign.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>FLAG</code></td>
+                    <td>A Nod <a href="terms.html#base">base</a> is in ruin. A GDI <a href="units.html#apc">APC</a> drives over the chain link <a href="structures.html#wood">fence</a>, crushes the Nod flag, then GDI soldiers get out and raise a GDI flag.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>FLYY</code></td>
+                    <td>An anti-aircraft <a href="terms.html#unit">unit</a> in green camo paint turns and fires at a green <a href="units.html#heli">attack helicopter</a> before being destroyed by one of its missiles.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>FORESTKL</code></td>
+                    <td>A Nod soldier is sneaking through a forest, then a GDI soldier appears from behind a tree and shoots him.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GAMEOVER</code></td>
+                    <td>GDI <a href="units.html#apc">APCs</a> being loaded onto a <a href="units.html#c17">cargo plane</a>, then a warehouse full of GDI equipment having the lights turned off and the doors sealed.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDI</code></td>
+                    <td>This appears to be three separate <a href="map-settings.html#cutscenes">cutscenes</a> joined together: EVA reconnecting the player after GDI funding is cut, then Carter&#x27;s garbled <a href="units.html#mbo">commando</a> briefing, then Carter&#x27;s briefing for the follow-up <a href="terms.html#scenario">scenario</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDI01_INTRO_01..GDI9</code></td>
+                    <td>GDI campaign briefings</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDIEND1</code></td>
+                    <td>A news reader reports on GDI&#x27;s final victory over Nod, without mention of the <a href="terms.html#ion-cannon">Ion Cannon</a>, then the staff <a href="terms.html#credits">credits</a> are shown.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDIEND2</code></td>
+                    <td>A news reader reports on GDI&#x27;s final victory over Nod, using the <a href="terms.html#ion-cannon">Ion Cannon</a>, then the staff <a href="terms.html#credits">credits</a> are shown.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDIFINA</code></td>
+                    <td>The <a href="structures.html#tmpl">Temple of Nod</a> is in ruin, two Nod soldiers watch the battle on a table-like screen and report the dire situation to Kane, who then walks through the <a href="structures.html#tmpl">temple</a> before he stumbles and is buried by rubble.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDIFINB</code></td>
+                    <td>The <a href="structures.html#tmpl">Temple of Nod</a> is in ruin, two Nod soldiers watch the battle on a table-like screen and report the dire situation to Kane, who then stands in the center of the <a href="structures.html#tmpl">temple</a> as the <a href="terms.html#ion-cannon">Ion Cannon</a> beam vaporises everything.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GDILOSE</code></td>
+                    <td>A scorpion takes breaks through the GDI logo and then forms the Nod logo.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GENERIC</code></td>
+                    <td>Kane sits in a chair outside an aircraft hangar and instructs the player to investigate some reports of strange animal behaviour.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>GUNBOAT</code></td>
+                    <td>A grey <a href="units.html#boat">gunboat</a> sails past a <a href="structures.html#gun">turret</a> and destroys it with missiles.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>HELLVALY</code></td>
+                    <td>A helicopter flies over a desert valley full of tiberium crystals, tendrils and mutated trees.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>INFERNO</code></td>
+                    <td>A <a href="units.html#ftnk">flame tank</a> with test markings drives through a pair of gates, down a street and torches a cafe and a car before turning to the camera and torching that too.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>INSITES</code></td>
+                    <td>A fighter aircraft is seen through a targeting reticule, then surface-to-air missiles destroy it.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>INTRO1</code></td>
+                    <td>EVA loads and displays video thumbnails in random positions on the screen at increasing speed. The information chatter crescendos until the loading is complete and the message &quot;welcome back, commander&quot; is displayed.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>INTRO1B</code></td>
+                    <td>The new &quot;fake&quot; install sequence for the remastered version, recreating the steps of the original while demonstrating the higher quality graphics and audio.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>INTRO2</code></td>
+                    <td>We hop between a series of TV channels, learning snippets of information about the world the game takes place in, and catching glimses of interference from two unknown competing transmissions. At least your mother tipped well.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>IONTEST</code></td>
+                    <td>Footage of an <a href="terms.html#ion-cannon">Ion Cannon</a> test - it destroys a dummy <a href="terms.html#base">base</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>KANEPRE</code></td>
+                    <td>Kane plays the viewer footage of EVA explaining what is known about tiberium, and adds his own clarifications to the narrative.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>LANDING</code></td>
+                    <td>Two GDI landing <a href="units.html#lst">hovercraft</a> leave a ship and zoom towards the sure, at sunrise.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>LOGO</code></td>
+                    <td>The Westwood Studios logo followed by the title screen introduction - a telescopic pole forms into a pair of concentric letter C&#x27;s and a &#x27;+&#x27; symbol, as an animation of a mushroom cloud and its mirror image play in the background.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>N64_GDI_FAIL</code></td>
+                    <td>From C&amp;C 64. A pair low-poly <a href="structures.html#obli">Obelisks</a> of Light laser a GDI logo into a Nod one, outside the <a href="structures.html#tmpl">Temple of Nod</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>N64_GDI_WIN</code></td>
+                    <td>From C&amp;C 64. Two low-poly <a href="units.html#orca">Orcas</a> cruise over a Nod <a href="terms.html#base">base</a> and launch missiles at a giant Nod logo, destroying it.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>N64_NOD_FAIL</code></td>
+                    <td>From C&amp;C 64. A Nod logo is hit by the <a href="terms.html#ion-cannon">Ion Cannon</a> beam from above, and replaced with the GDI logo.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>N64_NOD_WIN</code></td>
+                    <td>From C&amp;C 64. A low-poly grey Nod tank smashes through a tall <a href="terms.html#concrete">concrete</a> barrier with the GDI logo on it.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NAPALM</code></td>
+                    <td>The dark interior of a GDI Mobile HQ vehicle is shown, with glowing screens and lights as it monitors the battlefield. Aircraft approach and destroy it with bombs.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NITEJUMP</code></td>
+                    <td>Soldiers sneak into a <a href="terms.html#base">base</a> by helicopter at night and they gain access to one of the <a href="terms.html#structure">buildings</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NOD1..NOD9</code></td>
+                    <td>Nod campaign briefings</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODEND1</code></td>
+                    <td>A screen displaying four choices of location fades away, the <a href="terms.html#ion-cannon">Ion Cannon</a> charges then destroys one of them: the Eiffel Tower. A news reader reports on the chaos this causes and then the staff <a href="terms.html#credits">credits</a> are shown.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODEND2</code></td>
+                    <td>A screen displaying four choices of location fades away, the <a href="terms.html#ion-cannon">Ion Cannon</a> charges then destroys one of them: the Whitehouse. A news reader reports on the chaos this causes and then the staff <a href="terms.html#credits">credits</a> are shown.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODEND3</code></td>
+                    <td>A screen displaying four choices of location fades away, the <a href="terms.html#ion-cannon">Ion Cannon</a> charges then destroys one of them: the <a href="map-settings.html#houses">Houses</a> of Parliament. A news reader reports on the chaos this causes and then the staff <a href="terms.html#credits">credits</a> are shown.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODEND4</code></td>
+                    <td>A screen displaying four choices of location fades away, the <a href="terms.html#ion-cannon">Ion Cannon</a> charges then destroys one of them: the Brandenburg Gate. A news reader reports on the chaos this causes and then the staff <a href="terms.html#credits">credits</a> are shown.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODFINAL</code></td>
+                    <td>In the <a href="structures.html#tmpl">Temple of Nod</a>, Kane introduces the player to his &quot;Netrunners&quot; who don VR equipment and navigate a series of deadly computer defenses in cyberspace, finally reaching the <a href="terms.html#ion-cannon">Ion Cannon</a> control matrix.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODFINAL_ENDLOOP</code></td>
+                    <td>Four choices of location are shown in the four quadrants of the screen, with the <a href="terms.html#ion-cannon">Ion Cannon</a> in the center. Kane invites the player to choose which location to destroy.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODFLEES</code></td>
+                    <td>Nod soldiers are fleeing through a forest as tank shells explode around them, then the three GDI tanks persuing them roll into view.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODLOSE</code></td>
+                    <td>An eagle circles in the desert sky before swooping down and snatching a scorpion from a rock.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NODSWEEP</code></td>
+                    <td>Nod tanks, buggies and <a href="units.html#bike">bikes</a> tear through the forest and down a hill torwards a <a href="terms.html#base">base</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NUKE</code></td>
+                    <td>The tail section of the <a href="structures.html#tmpl">Temple of Nod</a> opens up and a <a href="terms.html#nuclear-missile">nuclear missile</a> launches from it up into the sky.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>NUKESTOK</code></td>
+                    <td>Stock footage of a nuclear explosion.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>OBEL</code></td>
+                    <td>An <a href="structures.html#obli">Obelisk of Light</a> <a href="terms.html#power">powers</a> up in a forest area and destroys one of three approaching GDI <a href="units.html#jeep">Humm-Vees</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>PARATROOP</code></td>
+                    <td>A <a href="structures.html#hq">radar</a> display inside a cockpit begins to flash and we see paratroopers in green camo launching from the back of an aircraft.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>PINTLE</code></td>
+                    <td>A soldier in green camo is firing a minigun from inside a helicopter, then another green soldier on the ground destroys the helicopter with a <a href="units.html#e3">bazooka</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>PLANECRA</code></td>
+                    <td>A delivery aircraft in green camo comes in to land on an <a href="structures.html#afld">airstrip</a>, but crashes and explodes.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>PODIUM</code></td>
+                    <td>General Sheppard speaking at a press conference, denying rumors spread by Kane&#x27;s media manipulation.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>PSX_MISSION_INTRO_01</code></td>
+                    <td>EVA displays simple text in the center of the screen as battlefield control is established.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>PSX_MISSION_INTRO_02</code></td>
+                    <td>EVA displays simple text in the center of the screen as battlefield control is established.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>RETRO</code></td>
+                    <td>A top secret dossier is opened on a desk to show a photo of an agent, cut to climbing the stairs of a warehouse where we see the silouette of a man being interrogated, then shot in the head.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SABOTAGE</code></td>
+                    <td>A C4 pack is attached to a <a href="terms.html#structure">building</a>, the timer ticks down, and it explodes.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SAMDIE</code></td>
+                    <td>A <a href="structures.html#sam">SAM site</a> in a forest <a href="terms.html#region">region</a> raises from its housing and scans the sky, then two grenades are tossed beside it and it is destroyed.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SAMSITE</code></td>
+                    <td>A <a href="structures.html#sam">SAM site</a> in the desert raises from its housing and launches missiles into the air, where they home in on a passing aircraft and destroy it.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SCB21EA_INTRO</code></td>
+                    <td>A Nod logo splits down the middle to reveal a <a href="terms.html#mission">mission</a> briefing - use the <a href="units.html#mbo">commando</a> to retrieve the <a href="terms.html#nuclear-missile">nuke</a> components.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SCB22EA_INTRO</code></td>
+                    <td>A Nod logo splits down the middle to reveal a <a href="terms.html#mission">mission</a> briefing - destroy the GDI POW camp and supporting <a href="terms.html#civilian">civilian</a> village.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SCG30EA_INTRO</code></td>
+                    <td>A GDI logo splits down the middle to reveal a <a href="terms.html#mission">mission</a> briefing - destroy the Nod tiberium bioresearch facility.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SCG90EA_INTRO</code></td>
+                    <td>A GDI logo splits down the middle to reveal a <a href="terms.html#mission">mission</a> briefing - rescue the <a href="units.html#mbo">commando</a> from the Nod technology center.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SEIGE</code></td>
+                    <td>Ariel shot of a GDI <a href="terms.html#base">base</a> in the desert being surrounded by Nod <a href="terms.html#unit">units</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SETHPRE</code></td>
+                    <td>Kane&#x27;s right hand Seth introduces a video about Nod&#x27;s background and goals, and the nature of tiberium.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SPYCRASH</code></td>
+                    <td>An aircraft as seen from the ground, as it collides with a mosque.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>STEALTH</code></td>
+                    <td>A Nod <a href="units.html#stnk">stealth tank</a> cloaks as it races across the desert. It reaches the perimeter of a GDI <a href="terms.html#base">base</a>, decloaks and launches missiles, destroying a pair of <a href="units.html#jeep">jeeps</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>SUNDIAL</code></td>
+                    <td>A large sundial in a town square, from above. The shadows of parabombs can be seen descending before they destroy it.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>S_AFRICA-00</code></td>
+                    <td>Nod campaign <a href="terms.html#map">map</a> zooming in on South Africa for the final <a href="terms.html#scenario">scenario</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TANKGO</code></td>
+                    <td>GDI <a href="units.html#mtnk">medium tanks</a> roll across the desert.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TANKKILL</code></td>
+                    <td>A GDI <a href="units.html#mtnk">medium tank</a> travels down a road at sunset with green hills in the background. A soldier hiding behind a ruined brick <a href="terms.html#wall">wall</a> destroys the tank with a <a href="units.html#e3">bazooka</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TBRINFO1</code></td>
+                    <td>EVA presents news snippets updating the player: Nod launches assault in Africa, GDI denies testing orbital <a href="terms.html#weapon">weapon</a>, tiberium causing ecological damage, GDI destroyed orphage. Kane interruptes the transmission to taunt the player</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TBRINFO2</code></td>
+                    <td>EVA presents an update on the dangers of tiberium: it&#x27;s spreading by means unknown, it leaches nutrients from plant life, exposure to it can be fatal. <a href="units.html#moebius">Dr Mobius</a> appears on a chat show.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TBRINFO3</code></td>
+                    <td>EVA reports on GDI&#x27;s research into global cases of tiberium poisoning and the spores causing them. <a href="units.html#moebius">Mobius</a>, at a press conference, warns of its <a href="terms.html#threat">threat</a> to the planet.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TIBERFX</code></td>
+                    <td>EVA reports on Nod&#x27;s research into the effects of tiberium poisoning.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>TURTKILL</code></td>
+                    <td>A Nod <a href="structures.html#gun">turret</a> in a forest is hit by a missile and destroyed.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>VISOR</code></td>
+                    <td>A <a href="units.html#a10">warthog</a> pilot receives urgent orders via their onboard computer and a squadron member peels off.</td>
+                </tr>
+            
+                <tr>
+                    <td><code>WW_LOGO</code></td>
+                    <td>The Westwood Studios logo.</td>
+                </tr>
+            
+        </tbody>
+    </table>
+</section>
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.2
+            - version 1.3
             - by Mark Frimston 
             - based on game version 
             <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
                 2020-09-16 patch
             </a>
+            - updated 2020-10-10
         </footer>
     </body>
 </html>

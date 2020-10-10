@@ -28,7 +28,7 @@
         </nav>
         <main>
             <h2>Triggers</h2>
-<p><a href="triggers.html">Triggers</a> are used to add scripted happennings to a <a href="terms.html#scenario">scenario</a>. A <a href="terms.html#trigger">trigger</a> can be attached to a <a href="terms.html#cell">cell</a> or <a href="terms.html#object">object</a>, or simply associated with a <a href="terms.html#house">House</a>. A scenario can have up to 80 triggers defined.</p>
+<p><a href="triggers.html">Triggers</a> are used to add scripted happennings to a <a href="terms.html#scenario">scenario</a>. A <a href="terms.html#trigger">trigger</a> can be attached to a <a href="terms.html#cell">cell</a> or <a href="terms.html#object">object</a>, or simply associated with a <a href="terms.html#house">House</a>. Triggers cannot be attached to aircraft or non-prebuilt <a href="terms.html#structure">structures</a>. A scenario can have up to 80 triggers defined.</p>
 <nav>
     <ul>
         <li><a href="#settings">Trigger Settings</a></li>
@@ -49,37 +49,37 @@
             
                 <tr id="field-action">
                     <td>Action</td>
-                    <td>what happens as a result of the <a href="terms.html#trigger">trigger</a>. See <a href="triggers.html#actions">Action Types</a></td>
+                    <td>What happens as a result of the <a href="terms.html#trigger">trigger</a>. See &quot;<a href="triggers.html#actions">Action Types</a>&quot;</td>
                 </tr>
             
                 <tr id="field-data">
                     <td>Data</td>
-                    <td>a value associated with the <a href="terms.html#trigger">trigger</a>. Required by some <a href="triggers.html#events">event types</a></td>
+                    <td>A value associated with the <a href="terms.html#trigger">trigger</a>. Required for some <a href="triggers.html#events">event types</a></td>
                 </tr>
             
                 <tr id="field-event">
                     <td>Event</td>
-                    <td>what must happen to activate the <a href="terms.html#trigger">trigger</a>. See <a href="triggers.html#events">Event Types</a></td>
+                    <td>What must happen to activate the <a href="terms.html#trigger">trigger</a>. See &quot;<a href="triggers.html#events">Event Types</a>&quot;</td>
                 </tr>
             
                 <tr id="field-house">
                     <td>House</td>
-                    <td>which side can activate the <a href="terms.html#trigger">trigger</a>. Required for some <a href="triggers.html#events">event types</a></td>
+                    <td>Which side the <a href="terms.html#trigger">trigger</a> applies to. Required for some <a href="triggers.html#events">event types</a></td>
                 </tr>
             
                 <tr id="field-loop">
                     <td>Loop</td>
-                    <td>whether the <a href="terms.html#trigger">trigger</a> is persistent or not. Volatile (&quot;no&quot;) means the trigger will fire once, when activated, and then be removed. Semi-persistent (&quot;and&quot;) means the trigger will fire only when it has been activated for all of the <a href="terms.html#object">objects</a> it is attached to, then will be removed. Persistent (&quot;or&quot;) means the trigger will continue to fire each time it is activated, without being removed.</td>
+                    <td>Whether the <a href="terms.html#trigger">trigger</a> is persistent or not. Volatile (&quot;no&quot;) means the trigger will fire once, when activated, and then be removed. Semi-persistent (&quot;and&quot;) means the trigger will fire only when it has been activated for all of the <a href="terms.html#object">objects</a> it is attached to, then will be removed. Persistent (&quot;or&quot;) means the trigger will continue to fire each time it is activated, without being removed.</td>
                 </tr>
             
                 <tr id="field-name">
                     <td>Name</td>
-                    <td>used to reference the <a href="terms.html#trigger">trigger</a>. No more than 4 characters</td>
+                    <td>The name by which to reference the <a href="terms.html#trigger">trigger</a>. No more than 4 characters.</td>
                 </tr>
             
                 <tr id="field-team">
                     <td>Team</td>
-                    <td>a <a href="terms.html#unit">unit</a> <a href="terms.html#team">team</a> definition referenced by this <a href="terms.html#trigger">trigger</a>. Required for some <a href="triggers.html#actions">action types</a></td>
+                    <td>A <a href="terms.html#unit">unit</a> <a href="terms.html#team">team</a> definition referenced by this <a href="terms.html#trigger">trigger</a>. Required for some <a href="triggers.html#actions">action types</a></td>
                 </tr>
             
         </tbody>
@@ -108,7 +108,7 @@
                     
                 </td>
                 <td>
-                    no <a href="terms.html#event">event</a>
+                    No <a href="terms.html#event">event</a>
                 </td>
             </tr>
         
@@ -134,7 +134,7 @@
                     
                 </td>
                 <td>
-                    a <a href="terms.html#unit">unit</a> owned by this <a href="terms.html#house">house</a> enters this <a href="terms.html#cell">cell</a>. Not triggered by cloaked units. If no house is specified, defaults to the human player.
+                    A <a href="terms.html#unit">unit</a> owned by this <a href="terms.html#house">house</a> (i.e. not necessarily the player) enters this <a href="terms.html#cell">cell</a>. Not triggered by aircraft (even when landed) or cloaked units. If no house is specified, defaults to the human player.
                 </td>
             </tr>
             
@@ -158,7 +158,7 @@
                     
                 </td>
                 <td>
-                    any <a href="terms.html#object">object</a> in the specified <a href="terms.html#house">house</a> is discovered by the player. Note this can only be triggered by the player.
+                    Any <a href="terms.html#object">object</a> in the specified <a href="terms.html#house">house</a> is discovered by the player. Note this can only be triggered by the player.
                 </td>
             </tr>
             
@@ -173,7 +173,7 @@
                     
                 </td>
                 <td>
-                    all <a href="terms.html#unit">units</a> belonging to the specified <a href="terms.html#house">house</a> have been destroyed, ignoring <a href="units.html#boat">gunboats</a>, <a href="units.html#tran">chinooks</a>, <a href="units.html#c17">cargo planes</a> and <a href="units.html#a10">warthogs</a>
+                    All <a href="terms.html#unit">units</a> belonging to the specified <a href="terms.html#house">house</a> have been destroyed, ignoring <a href="units.html#boat">gunboats</a>, <a href="units.html#tran">chinooks</a>, <a href="units.html#c17">cargo planes</a> and <a href="units.html#a10">warthogs</a>.
                 </td>
             </tr>
             
@@ -188,7 +188,7 @@
                     
                 </td>
                 <td>
-                    all of the <a href="terms.html#structure">buildings</a> belonging to the specified <a href="terms.html#house">house</a> have been destroyed
+                    All of the <a href="terms.html#structure">buildings</a> belonging to the specified <a href="terms.html#house">house</a> have been destroyed.
                 </td>
             </tr>
             
@@ -203,7 +203,7 @@
                     
                 </td>
                 <td>
-                    all <a href="terms.html#unit">units</a> and <a href="terms.html#structure">buildings</a> belonging to the specified <a href="terms.html#house">house</a> have been destroyed, ignoring <a href="units.html#boat">gunboats</a>, <a href="units.html#tran">chinooks</a>, <a href="units.html#c17">cargo planes</a> and <a href="units.html#a10">warthogs</a>.
+                    All <a href="terms.html#unit">units</a> and <a href="terms.html#structure">buildings</a> belonging to the specified <a href="terms.html#house">house</a> have been destroyed, ignoring <a href="units.html#boat">gunboats</a>, <a href="units.html#tran">chinooks</a>, <a href="units.html#c17">cargo planes</a> and <a href="units.html#a10">warthogs</a>.
                 </td>
             </tr>
             
@@ -220,7 +220,7 @@
                     
                 </td>
                 <td>
-                    the specified <a href="terms.html#house">house</a> reaches the number of <a href="terms.html#credits">credits</a> specified in &quot;data&quot;
+                    The specified <a href="terms.html#house">house</a> reaches the number of <a href="terms.html#credits">credits</a> specified in &quot;data&quot;.
                 </td>
             </tr>
             
@@ -237,7 +237,7 @@
                     
                 </td>
                 <td>
-                    the amount of time specified in &quot;data&quot; has elapsed for the specified <a href="terms.html#house">house</a>. If the <a href="terms.html#trigger">trigger</a> persists after activating, the timer resets and will activate after the amount of time has elapsed again. The time is measured in 1/10ths of a minute, e.g. 15 would be 1 minute 30 seconds.
+                    The amount of time specified in &quot;data&quot; has elapsed for the specified <a href="terms.html#house">house</a>. If the <a href="terms.html#trigger">trigger</a> persists after activating, the timer resets and will activate after the amount of time has elapsed again. The time is measured in 1/10ths of a minute, e.g. 15 would be 1 minute 30 seconds.
                 </td>
             </tr>
             
@@ -254,7 +254,7 @@
                     
                 </td>
                 <td>
-                    the specified <a href="terms.html#house">house</a> has lost the number of <a href="terms.html#structure">buildings</a> specified in &quot;data&quot;
+                    The specified <a href="terms.html#house">house</a> has lost the number of <a href="terms.html#structure">buildings</a> specified in &quot;data&quot;.
                 </td>
             </tr>
             
@@ -271,7 +271,7 @@
                     
                 </td>
                 <td>
-                    the specified <a href="terms.html#house">house</a> has lost the number of <a href="terms.html#unit">units</a> specified in &quot;data&quot;
+                    The specified <a href="terms.html#house">house</a> has lost the number of <a href="terms.html#unit">units</a> specified in &quot;data&quot;.
                 </td>
             </tr>
             
@@ -286,7 +286,7 @@
                     
                 </td>
                 <td>
-                    the specified <a href="terms.html#house">house</a> has no nod <a href="structures.html#afld">airstrips</a>, <a href="structures.html#hand">hands of nod</a>, gdi <a href="structures.html#weap">weapons factories</a> or <a href="structures.html#pyle">barracks</a>
+                    The specified <a href="terms.html#house">house</a> has no nod <a href="structures.html#afld">airstrips</a>, <a href="structures.html#hand">hands of nod</a>, gdi <a href="structures.html#weap">weapons factories</a> or <a href="structures.html#pyle">barracks</a>.
                 </td>
             </tr>
             
@@ -301,7 +301,7 @@
                     
                 </td>
                 <td>
-                    <a href="terms.html#civilian">civilian</a> evacuated - a civilian, non-<a href="terms.html#technician">technician</a> human <a href="terms.html#unit">unit</a> has left the bounds of the <a href="terms.html#map">map</a> in an aircraft owned by the specified <a href="terms.html#house">house</a>
+                    <a href="terms.html#civilian">Civilian</a> evacuated - a civilian, non-<a href="terms.html#technician">technician</a> human <a href="terms.html#unit">unit</a> has left the bounds of the <a href="terms.html#map">map</a> in an aircraft owned by the specified <a href="terms.html#house">house</a>. A <a href="units.html#tran">Chinook</a> will automatically do this when a civilian <a href="terms.html#infantry">infantry</a> is loaded inside.
                 </td>
             </tr>
             
@@ -318,7 +318,7 @@
                     
                 </td>
                 <td>
-                    <a href="terms.html#structure">building</a> type with the specified index has just been built by the specified <a href="terms.html#house">house</a>. See &quot;<a href="structures.html">Structure Types</a>&quot;
+                    <a href="terms.html#structure">Building</a> type with the specified index has just been built by the specified <a href="terms.html#house">house</a>. See &quot;<a href="structures.html">Structure Types</a>&quot;.
                 </td>
             </tr>
             
@@ -342,7 +342,7 @@
                     
                 </td>
                 <td>
-                    player discovers the <a href="terms.html#object">object</a> this <a href="terms.html#trigger">trigger</a> is attached to. Note this can only be triggered by the player. Note also that the player can discover objects they own themselves, e.g. discovering an abandoned <a href="terms.html#base">base</a>.
+                    Player discovers the <a href="terms.html#object">object</a> this <a href="terms.html#trigger">trigger</a> is attached to. Note this can only be triggered by the player. Note also that the player can discover objects they own themselves, e.g. discovering an abandoned <a href="terms.html#base">base</a>. Also note that <a href="triggers.html">triggers</a> cannot be attached to aircraft or non-prebuilt <a href="terms.html#structure">structures</a>.
                 </td>
             </tr>
             
@@ -357,7 +357,7 @@
                     
                 </td>
                 <td>
-                    the <a href="terms.html#object">object</a> this <a href="terms.html#trigger">trigger</a> is attached to is attacked
+                    The <a href="terms.html#object">object</a> this <a href="terms.html#trigger">trigger</a> is attached to is attacked. Note that <a href="triggers.html">triggers</a> cannot be attached to aircraft or non-prebuilt <a href="terms.html#structure">structures</a>.
                 </td>
             </tr>
             
@@ -372,7 +372,7 @@
                     
                 </td>
                 <td>
-                    the <a href="terms.html#object">object</a> this <a href="terms.html#trigger">trigger</a> is attached to is destroyed
+                    The <a href="terms.html#object">object</a> this <a href="terms.html#trigger">trigger</a> is attached to is destroyed. Note that <a href="triggers.html">triggers</a> cannot be attached to aircraft or non-prebuilt <a href="terms.html#structure">structures</a>.
                 </td>
             </tr>
             
@@ -387,7 +387,7 @@
                     
                 </td>
                 <td>
-                    any of the &quot;<a href="terms.html#object">object</a>&quot; category <a href="terms.html#event">events</a> happen to the object this <a href="terms.html#trigger">trigger</a> is attached to
+                    Any of the &quot;<a href="terms.html#object">object</a>&quot; category <a href="terms.html#event">events</a> happen to the object this <a href="terms.html#trigger">trigger</a> is attached to. Note that <a href="triggers.html">triggers</a> cannot be attached to aircraft or non-prebuilt <a href="terms.html#structure">structures</a>.
                 </td>
             </tr>
             
@@ -452,7 +452,7 @@
                         
                     </td>
                     <td>
-                        A computer-controlled <a href="terms.html#house">house</a> begins production. The <a href="terms.html#ai">AI</a> won&#x27;t build anything until this is triggered. House will be the specified house when triggered by an <a href="terms.html#event">event</a> in the &quot;house&quot; category, otherwise it will be whichever of GDI/Nod the player isn&#x27;t controlling.
+                        A computer-controlled <a href="terms.html#house">house</a> in <a href="terms.html#singleplayer">singleplayer</a> begins production. The <a href="terms.html#ai">AI</a> won&#x27;t build anything until this is triggered (See &quot;<a href="team-types.html#sp-production-ai">Singleplayer Production AI</a>&quot;). House will be the specified house when triggered by an <a href="terms.html#event">event</a> in the &quot;house&quot; category, otherwise it will be whichever of GDI/Nod the player isn&#x27;t controlling.
                     </td>
                 </tr>
             
@@ -513,7 +513,7 @@
                         
                     </td>
                     <td>
-                        Deploys drop zone flare at dropzone <a href="terms.html#waypoint">waypoint</a> (#25), revealing that part of the <a href="terms.html#map">map</a> for the player.
+                        Deploys drop zone flare at dropzone <a href="terms.html#waypoint">waypoint</a> (#25), revealing that part of the <a href="terms.html#map">map</a> for the player. See &quot;<a href="waypoints.html">Waypoints</a>&quot;
                     </td>
                 </tr>
             
@@ -594,7 +594,7 @@
                         
                     </td>
                     <td>
-                        &quot;Alerts&quot; a computer-controlled <a href="terms.html#house">House</a> so that it begins considering <a href="terms.html#team">teams</a> marked as &quot;auto-create&quot; for <a href="terms.html#structure">building</a> (see &quot;<a href="team-types.html">Team Types</a>&quot;) and immediately creates a random quantity of empty teams; min 2 and max up to 7 depending on the <a href="terms.html#build-level">Build Level</a>. The <a href="terms.html#ai">AI</a> will then continue to do this every few minutes (16-40 on easy difficulty, 5-20 on medium or 4-10 on hard). Note that the AI will not actually create <a href="terms.html#unit">units</a> or <a href="terms.html#structure">structures</a> until &quot;Production&quot; is triggered. The House alerted will be the one specified, if triggered by a &quot;house&quot; category <a href="terms.html#event">event</a>, or the <a href="terms.html#object">object</a> owner for &quot;object&quot; events, or simply all <a href="map-settings.html#houses">Houses</a> for a &quot;<a href="terms.html#cell">cell</a>&quot; event.
+                        &quot;Alerts&quot; a computer-controlled <a href="terms.html#house">House</a> so that it begins considering <a href="terms.html#team">teams</a> marked as &quot;auto-create&quot; for <a href="terms.html#structure">building</a> (see &quot;<a href="team-types.html">Team Types</a>&quot; and &quot;<a href="team-types.html#sp-production-ai">Singleplayer Production AI</a>&quot;) and immediately creates a random quantity of empty teams; min 2 and max up to 7 depending on the <a href="terms.html#build-level">Build Level</a>. The <a href="terms.html#ai">AI</a> will then continue to do this every few minutes (16-40 on easy difficulty, 5-20 on medium or 4-10 on hard). Note that the AI will not actually create <a href="terms.html#unit">units</a> or <a href="terms.html#structure">structures</a> until &quot;Production&quot; is triggered. The House alerted will be the one specified, if triggered by a &quot;house&quot; category <a href="terms.html#event">event</a>, or the <a href="terms.html#object">object</a> owner for &quot;object&quot; events, or simply all <a href="map-settings.html#houses">Houses</a> for a &quot;<a href="terms.html#cell">cell</a>&quot; event.
                     </td>
                 </tr>
             
@@ -605,7 +605,7 @@
                         
                     </td>
                     <td>
-                        The player wins if this <a href="terms.html#action">action</a> is triggered by a &quot;player enters&quot; <a href="terms.html#event">event</a> or loses if triggered by a &quot;destroyed&quot; event. Will not <a href="terms.html#trigger">trigger</a> for any other event. In <a href="terms.html#singleplayer">singleplayer</a>, a <a href="terms.html#structure">structure</a> with this action attached will be made capturable regardless of whether it usually can be captured.
+                        The player wins if this <a href="terms.html#action">action</a> is triggered by a &quot;player enters&quot; <a href="terms.html#event">event</a> or loses if triggered by a &quot;destroyed&quot; event. Will not <a href="terms.html#trigger">trigger</a> for any other event. In <a href="terms.html#singleplayer">singleplayer</a>, a <a href="terms.html#structure">structure</a> with this action attached will be made capturable regardless of whether it can usually be captured.
                     </td>
                 </tr>
             
@@ -618,7 +618,7 @@
                         
                     </td>
                     <td>
-                        Until all of this type of <a href="terms.html#trigger">trigger</a> are triggered and removed for this <a href="terms.html#house">house</a>, the house cannot win the <a href="terms.html#scenario">scenario</a>.
+                        Until all of this type of <a href="terms.html#trigger">trigger</a> are triggered and removed for this <a href="terms.html#house">house</a>, the house cannot win the <a href="terms.html#scenario">scenario</a>. Note, however, that such <a href="triggers.html">triggers</a> do not prevent the player from losing the scenario when associated with the computer-controlled house.
                     </td>
                 </tr>
             
@@ -628,12 +628,13 @@
         </main>
         <footer>
             A reference for the C&amp;C Remastered Tiberian Dawn map editor 
-            - version 1.2
+            - version 1.3
             - by Mark Frimston 
             - based on game version 
             <a href="https://github.com/electronicarts/CnC_Remastered_Collection/commit/fd05be35c1ee5dfcb6143ddcc79f16b74a8ce8a5">
                 2020-09-16 patch
             </a>
+            - updated 2020-10-10
         </footer>
     </body>
 </html>
